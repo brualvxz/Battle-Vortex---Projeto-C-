@@ -1,6 +1,6 @@
 # Battle Vortex
 
-#### Integrantes: Bruno Vilela Alves e Vitor Reis
+#### Integrantes: Vitor Reis e Bruno Vilela
 ------------------------------------------------------
 ### Descrição do Projeto:
 
