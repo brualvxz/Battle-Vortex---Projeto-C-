@@ -1,0 +1,60 @@
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe.config
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.pdb
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\MySql.Data.dll
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Google.Protobuf.dll
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\MySql.Data.xml
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.AssemblyReference.cache
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Login.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Properties.Resources.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.GenerateResource.cache
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.CoreCompileInputs.cache
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.CopyComplete
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.exe
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.pdb
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe.config
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.pdb
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\MySql.Data.dll
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Google.Protobuf.dll
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\MySql.Data.xml
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.AssemblyReference.cache
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Login.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Properties.Resources.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.GenerateResource.cache
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.CoreCompileInputs.cache
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.CopyComplete
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.exe
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.pdb
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.cadastro.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeUser.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe.config
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.pdb
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Google.Protobuf.dll
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\MySql.Data.xml
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.AssemblyReference.cache
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.cadastro.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeAdm.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeUser.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresAdm.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresCadastrar.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Login.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Properties.Resources.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.GenerateResource.cache
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.CoreCompileInputs.cache
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle V.6454AFD1.Up2Date
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.exe
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.pdb
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresAlt.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAdm.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresCadastrar.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.cadastro.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeAdm.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeUser.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresAdm.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresAlt.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresCadastrar.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAdm.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresCadastrar.resources
+G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAlt.resources
