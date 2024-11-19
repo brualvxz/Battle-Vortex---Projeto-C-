@@ -78,12 +78,13 @@ namespace Battle_Vortex_Form
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(596, 391);
+            this.button5.Location = new System.Drawing.Point(556, 401);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(167, 23);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
+            this.button5.Text = "Participe dos Torneios:";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 

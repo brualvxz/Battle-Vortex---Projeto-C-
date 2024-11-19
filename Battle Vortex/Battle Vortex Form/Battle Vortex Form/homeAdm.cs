@@ -31,5 +31,13 @@ namespace Battle_Vortex_Form
             pat.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            torneioAdm torneio = new torneioAdm(); 
+            torneio.Show();
+            this.Close();
+
+        }
     }
 }

@@ -58,3 +58,6 @@ G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_F
 G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAdm.resources
 G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresCadastrar.resources
 G:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAlt.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAlt.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioAdm.resources
+D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneiosCadastrar.resources
