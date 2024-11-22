@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using MySql.Data.MySqlClient;
+using System.IO;
 
 namespace Battle_Vortex_Form
 {
@@ -38,6 +40,13 @@ namespace Battle_Vortex_Form
             torneio.Show();
             this.Close();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            premiosAdm premiosAdm = new premiosAdm();
+            premiosAdm.Show();  
+            this.Close();
         }
     }
 }

@@ -151,8 +151,6 @@ namespace Battle_Vortex_Form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            patrocinadoresAdm patrocinadoresAdm = new patrocinadoresAdm();
-            patrocinadoresAdm.Show();
             this.Close();
         }
     }

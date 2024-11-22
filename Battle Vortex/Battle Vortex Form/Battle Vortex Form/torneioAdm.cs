@@ -27,7 +27,7 @@ namespace Battle_Vortex_Form
             {
                 conexao.Open();
 
-                // Consulta para pegar o nome das colunas da tabela torneios
+                
                 MySqlCommand consultaColunas = new MySqlCommand("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'eventosbv' AND TABLE_NAME = 'torneios';", conexao);
                 comboBox1.Items.Clear();
 
@@ -48,19 +48,19 @@ namespace Battle_Vortex_Form
                     }
                 }
 
-                // Consulta para carregar os dados dos torneios
+              
                 string query = "SELECT id, nome, data_inicio, data_fim, local, descricao, regras, vagas, status, logo FROM torneios";
                 MySqlCommand consultaDados = new MySqlCommand(query, conexao);
                 MySqlDataAdapter da = new MySqlDataAdapter(consultaDados);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                // Limpa o DataGridView antes de adicionar os dados
+                
                 dataGridView1.DataSource = null;
-                dataGridView1.Columns.Clear(); // Limpa as colunas para evitar duplicação
+                dataGridView1.Columns.Clear(); 
                 dataGridView1.DataSource = dt;
 
-                // Adiciona colunas para "Alterar" e "Excluir" se não existirem
+               
                 if (!dataGridView1.Columns.Contains("Alterar"))
                 {
                     DataGridViewButtonColumn alterarColumn = new DataGridViewButtonColumn
@@ -89,7 +89,7 @@ namespace Battle_Vortex_Form
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // Verifica se a célula clicada não está na linha de cabeçalho
+            if (e.RowIndex >= 0) 
             {
                 int idTorneio = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id"].Value);
                 CarregarLogoTorneio(idTorneio);

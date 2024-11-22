@@ -155,7 +155,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(439, 274);
+            this.button2.Location = new System.Drawing.Point(439, 287);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(210, 23);
             this.button2.TabIndex = 15;
@@ -177,7 +177,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(604, 23);
             this.button3.TabIndex = 17;
-            this.button3.Text = "Voltar para o menu";
+            this.button3.Text = "Voltar para a vizualização";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

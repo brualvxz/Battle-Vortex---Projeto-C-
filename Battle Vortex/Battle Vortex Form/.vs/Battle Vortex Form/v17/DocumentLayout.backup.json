@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Battle Vortex\\Battle Vortex Form\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\premioalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\premioalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\premioalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\premioalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\jogadoresalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\jogadoresalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|D:\\Battle Vortex\\Battle Vortex Form\\battle vortex form\\premioscadastrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\premioscadastrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|D:\\Battle Vortex\\Battle Vortex Form\\battle vortex form\\premiosadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\premiosadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\premioscadastrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\premioscadastrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\premiosadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\premiosadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\jogadoresalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\jogadoresalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\homeadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\homeadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|D:\\Battle Vortex\\Battle Vortex Form\\battle vortex form\\torneioadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\torneioadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|D:\\Battle Vortex\\Battle Vortex Form\\battle vortex form\\torneioadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\torneioadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\torneioscadastrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\torneioscadastrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|d:\\battle vortex\\battle vortex form\\battle vortex form\\homeadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE5667BE-0264-4AA4-B4A6-0250D5EFC6F9}|Battle Vortex Form\\Battle Vortex Form.csproj|solutionrelative:battle vortex form\\homeadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "torneioAdm.cs [Design]",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\torneioAdm.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\torneioAdm.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\torneioAdm.cs [Design]",
+              "RelativeToolTip": "Battle Vortex Form\\torneioAdm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:38:06.563Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "torneioAdm.cs",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\torneioAdm.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\torneioAdm.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\torneioAdm.cs",
+              "RelativeToolTip": "Battle Vortex Form\\torneioAdm.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAADgv94AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:38:10.142Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "premiosAdm.cs [Design]",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premiosAdm.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\premiosAdm.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premiosAdm.cs [Design]",
+              "RelativeToolTip": "Battle Vortex Form\\premiosAdm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:37:40.695Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "premiosAdm.cs",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premiosAdm.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\premiosAdm.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premiosAdm.cs",
+              "RelativeToolTip": "Battle Vortex Form\\premiosAdm.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwJkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:37:54.597Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "premiosCadastrar.cs [Design]",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premiosCadastrar.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\premiosCadastrar.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premiosCadastrar.cs [Design]",
+              "RelativeToolTip": "Battle Vortex Form\\premiosCadastrar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:37:41.267Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "premiosCadastrar.cs",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premiosCadastrar.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\premiosCadastrar.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premiosCadastrar.cs",
+              "RelativeToolTip": "Battle Vortex Form\\premiosCadastrar.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAUwPcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:55:34.809Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "premioAlt.cs",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premioAlt.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\premioAlt.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premioAlt.cs*",
+              "RelativeToolTip": "Battle Vortex Form\\premioAlt.cs*",
+              "ViewState": "AgIAACcAAAAAAAAAAAApwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:52:56.932Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "premioAlt.cs [Design]",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premioAlt.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\premioAlt.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\premioAlt.cs [Design]*",
+              "RelativeToolTip": "Battle Vortex Form\\premioAlt.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T16:08:53.986Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "jogadoresAlt.cs",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\jogadoresAlt.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\jogadoresAlt.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\jogadoresAlt.cs",
+              "RelativeToolTip": "Battle Vortex Form\\jogadoresAlt.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAawBsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T15:41:36.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "jogadoresAlt.cs [Design]",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\jogadoresAlt.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\jogadoresAlt.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\jogadoresAlt.cs [Design]",
+              "RelativeToolTip": "Battle Vortex Form\\jogadoresAlt.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T15:41:35.762Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "homeAdm.cs",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\homeAdm.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\homeAdm.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\homeAdm.cs",
+              "RelativeToolTip": "Battle Vortex Form\\homeAdm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:48:30.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "torneiosCadastrar.cs",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\torneiosCadastrar.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\torneiosCadastrar.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\torneiosCadastrar.cs",
+              "RelativeToolTip": "Battle Vortex Form\\torneiosCadastrar.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwFQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:55:52.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "homeAdm.cs [Design]",
+              "DocumentMoniker": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\homeAdm.cs",
+              "RelativeDocumentMoniker": "Battle Vortex Form\\homeAdm.cs",
+              "ToolTip": "D:\\Battle Vortex\\Battle Vortex Form\\Battle Vortex Form\\homeAdm.cs [Design]",
+              "RelativeToolTip": "Battle Vortex Form\\homeAdm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:48:28.607Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
