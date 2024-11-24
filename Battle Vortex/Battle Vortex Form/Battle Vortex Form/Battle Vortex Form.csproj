@@ -53,6 +53,36 @@
     <Compile Include="cadastro.Designer.cs">
       <DependentUpon>cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="classificacaoAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classificacaoAdm.Designer.cs">
+      <DependentUpon>classificacaoAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classificacaoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classificacaoCadastrar.Designer.cs">
+      <DependentUpon>classificacaoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="equipesAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="equipesAdm.Designer.cs">
+      <DependentUpon>equipesAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="equipesAlt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="equipesAlt.Designer.cs">
+      <DependentUpon>equipesAlt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="equipesCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="equipesCadastrar.Designer.cs">
+      <DependentUpon>equipesCadastrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="jogadoresAdm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +157,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rankingAlt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rankingAlt.Designer.cs">
+      <DependentUpon>rankingAlt.cs</DependentUpon>
+    </Compile>
     <Compile Include="torneioAdm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +183,21 @@
     </Compile>
     <EmbeddedResource Include="cadastro.resx">
       <DependentUpon>cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classificacaoAdm.resx">
+      <DependentUpon>classificacaoAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classificacaoCadastrar.resx">
+      <DependentUpon>classificacaoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="equipesAdm.resx">
+      <DependentUpon>equipesAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="equipesAlt.resx">
+      <DependentUpon>equipesAlt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="equipesCadastrar.resx">
+      <DependentUpon>equipesCadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homeAdm.resx">
       <DependentUpon>homeAdm.cs</DependentUpon>
@@ -192,6 +243,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="torneioAdm.resx">
       <DependentUpon>torneioAdm.cs</DependentUpon>
@@ -214,6 +266,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home para todos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

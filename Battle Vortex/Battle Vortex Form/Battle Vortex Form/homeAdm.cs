@@ -24,14 +24,14 @@ namespace Battle_Vortex_Form
         {
             jogadoresAdm jogadoresAdm = new jogadoresAdm();
             jogadoresAdm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             patrocinadoresAdm pat = new patrocinadoresAdm();
             pat.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -46,6 +46,20 @@ namespace Battle_Vortex_Form
         {
             premiosAdm premiosAdm = new premiosAdm();
             premiosAdm.Show();  
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            equipesAdm equipesAdm = new equipesAdm();
+            equipesAdm.Show();
+            this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            classificacaoAdm classificacaoAdm = new classificacaoAdm();
+            classificacaoAdm.Show();
             this.Close();
         }
     }

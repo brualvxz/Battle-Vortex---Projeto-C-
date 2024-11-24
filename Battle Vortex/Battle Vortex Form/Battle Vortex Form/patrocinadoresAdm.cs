@@ -43,7 +43,7 @@ namespace Battle_Vortex_Form
                 }
 
                 // Consulta para carregar os dados dos patrocinadores
-                string query = "SELECT id, nome, conquistas, logo, evento_patrocinado FROM patrocinadores";
+                string query = "SELECT id, nome, conquistas, logo FROM patrocinadores";
                 MySqlCommand consultaDados = new MySqlCommand(query, conexao);
                 MySqlDataAdapter da = new MySqlDataAdapter(consultaDados);
                 DataTable dt = new DataTable();
@@ -205,7 +205,7 @@ namespace Battle_Vortex_Form
                     conexao.Open();
 
                     // Consulta de filtragem usando DataAdapter e DataTable para atualizar DataGridView
-                    string query = $"SELECT id, nome, conquistas, logo, evento_patrocinado FROM patrocinadores WHERE `{campo}` LIKE @valorCampo";
+                    string query = $"SELECT id, nome, conquistas, logo FROM patrocinadores WHERE `{campo}` LIKE @valorCampo";
                     MySqlCommand consulta = new MySqlCommand(query, conexao);
                     consulta.Parameters.AddWithValue("@valorCampo", "%" + valorCampo + "%");
 

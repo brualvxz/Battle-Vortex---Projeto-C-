@@ -21,11 +21,11 @@ namespace Battle_Vortex_Form
         public patrocinadoresAlt(string id)
         {
             InitializeComponent();
-            // Conexão com o banco de dados eventosbv
+           
             MySqlConnection conexao = new MySqlConnection("SERVER=localhost;DATABASE=eventosbv;UID=root;PASSWORD=");
             conexao.Open();
 
-            // Comando para consultar a tabela 'patrocinadores' com base no ID do patrocinador
+            
             MySqlCommand consulta = new MySqlCommand();
             consulta.Connection = conexao;
             consulta.CommandText = "SELECT * FROM patrocinadores WHERE id = " + id;
@@ -35,19 +35,18 @@ namespace Battle_Vortex_Form
             {
                 while (resultado.Read())
                 {
-                    // Preenche os TextBox com os dados do patrocinador
-                    textBox2.Text = resultado["id"].ToString();                // ID do patrocinador
-                    textBox1.Text = resultado["nome"].ToString();              // Nome do patrocinador
-                    textBox3.Text = resultado["conquistas"].ToString();        // Conquistas
+                   
+                    textBox2.Text = resultado["id"].ToString();               
+                    textBox1.Text = resultado["nome"].ToString();              
+                    textBox3.Text = resultado["conquistas"].ToString();        
 
-                    // Carrega a imagem do patrocinador na PictureBox
+                    
                     string caminhoImagem = resultado["logo"].ToString();
-                    caminhoNoServidor = caminhoImagem.Replace("+", @"\"); // Converte para o formato correto de caminho
+                    caminhoNoServidor = caminhoImagem.Replace("+", @"\"); 
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pictureBox1.Image = Image.FromFile(caminhoNoServidor); // Exibe a imagem
+                    pictureBox1.Image = Image.FromFile(caminhoNoServidor); 
 
-                    // Preenche a ComboBox com o evento patrocinado
-                    comboBox1.SelectedValue = resultado["evento_patrocinado"];  // Evento patrocinado
+                  
                 }
             }
             else
@@ -56,21 +55,6 @@ namespace Battle_Vortex_Form
             }
 
             resultado.Close();
-
-            // Carrega os valores para a ComboBox 'evento_patrocinado'
-            MySqlCommand consultaEvento = new MySqlCommand();
-            consultaEvento.Connection = conexao;
-            consultaEvento.CommandText = "SELECT id, nome FROM torneios"; // Ajuste o nome da tabela de torneios
-
-            MySqlDataReader resultadoEvento = consultaEvento.ExecuteReader();
-            comboBox1.Items.Clear();  // Limpa a ComboBox antes de adicionar novos itens
-            while (resultadoEvento.Read())
-            {
-                comboBox1.Items.Add(new { Text = resultadoEvento["nome"].ToString(), Value = resultadoEvento["id"] });
-            }
-            resultadoEvento.Close();
-
-            // Fechar a conexão
             conexao.Close();
         }
 
@@ -117,13 +101,13 @@ namespace Battle_Vortex_Form
                     // Comando para atualizar os dados do patrocinador com base no ID
                     MySqlCommand comando = new MySqlCommand();
                     comando.Connection = conexao;
-                    comando.CommandText = @"UPDATE patrocinadores SET nome = @nome, conquistas = @conquistas, logo = @logo, evento_patrocinado = @evento_patrocinado WHERE id = @id";
+                    comando.CommandText = @"UPDATE patrocinadores SET nome = @nome, conquistas = @conquistas, logo = @logo WHERE id = @id";
 
                     // Adicionando os parâmetros para a consulta
                     comando.Parameters.AddWithValue("@nome", textBox1.Text);
                     comando.Parameters.AddWithValue("@conquistas", textBox3.Text);
-                    comando.Parameters.AddWithValue("@logo", caminhoNoServidor);  // Caminho da imagem
-                    comando.Parameters.AddWithValue("@evento_patrocinado", ((dynamic)comboBox1.SelectedItem).Value);
+                    comando.Parameters.AddWithValue("@logo", caminhoNoServidor);  
+                   
                     comando.Parameters.AddWithValue("@id", textBox2.Text);
 
                     // Executa a atualização
