@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/11/2024 às 01:53
+-- Tempo de geração: 28/11/2024 às 02:48
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -48,7 +48,9 @@ INSERT INTO `equipes` (`id`, `nome`, `logo`, `localidade`, `capitao_id`, `data_c
 (4, 'Equipe Delta', NULL, 'Cidade D', NULL, NULL, NULL),
 (5, 'Equipe Epsilon', NULL, 'Cidade E', NULL, NULL, NULL),
 (6, 'Equipe Zeta', NULL, 'Cidade F', NULL, NULL, NULL),
-(7, 'noppa', 'D:\\Battle Vortex\\Imagens\\fotobanco\\jinx 1.gif', 'sp', NULL, '2024-11-24', 'vitor@gmail.com');
+(7, 'noppa', 'D:\\Battle Vortex\\Imagens\\fotobanco\\jinx 1.gif', 'sp', NULL, '2024-11-24', 'vitor@gmail.com'),
+(8, 'caio team', 'D:\\Battle Vortex\\Imagens\\fotobanco\\jinx.jpeg', 'sp', 13, '2024-11-24', 'caio@gmail.com'),
+(9, 'noppa equipe', 'D:\\Battle Vortex\\Imagens\\fotobanco\\VAPORWAVE TOKYO CITY ANIME TEE ( 2 COLORS ).gif', 'go', 14, '2024-11-24', 'noppa1234@gmail.com');
 
 --
 -- Acionadores `equipes`
@@ -113,6 +115,30 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
+-- Estrutura para tabela `equipes_jogadores`
+--
+
+CREATE TABLE `equipes_jogadores` (
+  `id` int(11) NOT NULL,
+  `jogador_id` int(11) NOT NULL,
+  `equipe_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `eventos_patrocinadores`
+--
+
+CREATE TABLE `eventos_patrocinadores` (
+  `id` int(11) NOT NULL,
+  `torneio_id` int(11) NOT NULL,
+  `patrocinador_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `jogadores`
 --
 
@@ -134,7 +160,10 @@ INSERT INTO `jogadores` (`id`, `nome`, `nickname`, `equipe_id`, `personagemMain_
 (3, 'Carlos Pereira', 'ArrowMaster', 1, 3, 'Melhor Arqueiro 2023', NULL),
 (7, 'Vitor', 'vitzx', 1, 2, 'Programador Infernal', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Simon🎀.jpg'),
 (9, 'caiopa', 'caiopa3', NULL, 10, 'dfkljsdfjsdfjkndfg', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Results for quiz whats your secret turn on.jpg'),
-(10, 'gato', 'rolinha', 1, 13, 'sou viadao', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Staring_Cat_meme.png');
+(10, 'gato', 'rolinha', 1, 13, 'sou viadao', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Staring_Cat_meme.png'),
+(12, 'noppa', 'nopinha', 8, 19, 'melhor porcao do jogo', 'G:\\Battle Vortex\\Imagens\\fotobanco\\GbodDITXsAAYzZO.jpeg'),
+(13, 'caiopa04', 'caiopaaa', 8, 14, 'Nao que eu me lembre', 'G:\\Battle Vortex\\Imagens\\fotobanco\\$$.jpg'),
+(14, 'tsuru', 'tsuru come cu', 9, 14, 'asdasdadad', 'G:\\Battle Vortex\\Imagens\\fotobanco\\jinx.jpeg');
 
 -- --------------------------------------------------------
 
@@ -347,7 +376,10 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `tipo`, `status`, `jogador_id`) VALUES
 (1, 'vitor', 'vitorrei1276@gmail.com', '12345', 'Administrador', 'Ativo', NULL),
 (2, 'user1', 'user1@example.com', 'senha123', 'Usuário', 'Ativo', NULL),
-(3, 'user2', 'user2@example.com', 'senha456', 'Usuário', 'Ativo', NULL);
+(3, 'user2', 'user2@example.com', 'senha456', 'Usuário', 'Ativo', NULL),
+(4, 'noppa', 'noppa1276@gmail.com', '12345', 'Usuário', 'Ativo', 12),
+(5, 'caio', 'caio@gmail.com', '12345', 'Usuário', 'Ativo', 13),
+(6, 'noppa1', 'user1234@gmail.com', '12345', 'Usuário', 'Ativo', 14);
 
 --
 -- Acionadores `usuarios`
@@ -390,6 +422,22 @@ ALTER TABLE `equipes_inscritas`
   ADD PRIMARY KEY (`id`),
   ADD KEY `torneio_id` (`torneio_id`),
   ADD KEY `equipe_id` (`equipe_id`);
+
+--
+-- Índices de tabela `equipes_jogadores`
+--
+ALTER TABLE `equipes_jogadores`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `jogador_id` (`jogador_id`),
+  ADD KEY `equipe_id` (`equipe_id`);
+
+--
+-- Índices de tabela `eventos_patrocinadores`
+--
+ALTER TABLE `eventos_patrocinadores`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `torneio_id` (`torneio_id`),
+  ADD KEY `patrocinador_id` (`patrocinador_id`);
 
 --
 -- Índices de tabela `jogadores`
@@ -449,7 +497,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `equipes`
 --
 ALTER TABLE `equipes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `equipes_inscritas`
@@ -458,10 +506,22 @@ ALTER TABLE `equipes_inscritas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de tabela `equipes_jogadores`
+--
+ALTER TABLE `equipes_jogadores`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `eventos_patrocinadores`
+--
+ALTER TABLE `eventos_patrocinadores`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de tabela `jogadores`
 --
 ALTER TABLE `jogadores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de tabela `patrocinadores`
@@ -497,7 +557,7 @@ ALTER TABLE `torneios`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Restrições para tabelas despejadas
@@ -515,6 +575,20 @@ ALTER TABLE `equipes`
 ALTER TABLE `equipes_inscritas`
   ADD CONSTRAINT `equipes_inscritas_ibfk_1` FOREIGN KEY (`torneio_id`) REFERENCES `torneios` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `equipes_inscritas_ibfk_2` FOREIGN KEY (`equipe_id`) REFERENCES `equipes` (`id`) ON DELETE CASCADE;
+
+--
+-- Restrições para tabelas `equipes_jogadores`
+--
+ALTER TABLE `equipes_jogadores`
+  ADD CONSTRAINT `equipes_jogadores_ibfk_1` FOREIGN KEY (`jogador_id`) REFERENCES `jogadores` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `equipes_jogadores_ibfk_2` FOREIGN KEY (`equipe_id`) REFERENCES `equipes` (`id`) ON DELETE CASCADE;
+
+--
+-- Restrições para tabelas `eventos_patrocinadores`
+--
+ALTER TABLE `eventos_patrocinadores`
+  ADD CONSTRAINT `eventos_patrocinadores_ibfk_1` FOREIGN KEY (`torneio_id`) REFERENCES `torneios` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `eventos_patrocinadores_ibfk_2` FOREIGN KEY (`patrocinador_id`) REFERENCES `patrocinadores` (`id`) ON DELETE CASCADE;
 
 --
 -- Restrições para tabelas `jogadores`
