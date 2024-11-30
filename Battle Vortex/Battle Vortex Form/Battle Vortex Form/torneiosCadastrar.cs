@@ -49,31 +49,54 @@ namespace Battle_Vortex_Form
             MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;");
             conexao.Open();
 
-            string inserir = "INSERT INTO `torneios`(`nome`, `data_inicio`, `data_fim`, `local`, `descricao`, `regras`, `vagas`, `logo`) " +
-                             "VALUES(@nome, @data_inicio, @data_fim, @local, @descricao, @regras, @vagas, @logo)";
+            try
+            {
+                // Insere o torneio no banco de dados
+                string inserir = "INSERT INTO `torneios`(`nome`, `data_inicio`, `data_fim`, `local`, `descricao`, `regras`, `vagas`, `logo`, `organizador_id`) " +
+                                 "VALUES(@nome, @data_inicio, @data_fim, @local, @descricao, @regras, @vagas, @logo, @organizadorid)";
 
-            MySqlCommand comandos = new MySqlCommand(inserir, conexao);
-            comandos.Parameters.AddWithValue("@nome", nome);
-            comandos.Parameters.AddWithValue("@data_inicio", dataInicio);
-            comandos.Parameters.AddWithValue("@data_fim", dataFim);
-            comandos.Parameters.AddWithValue("@local", local);
-            comandos.Parameters.AddWithValue("@descricao", descricao);
-            comandos.Parameters.AddWithValue("@regras", regras);
-            comandos.Parameters.AddWithValue("@vagas", vagas);
-            comandos.Parameters.AddWithValue("@logo", caminhoNoServidor);  // Insere o caminho da imagem
+                MySqlCommand comandos = new MySqlCommand(inserir, conexao);
+                comandos.Parameters.AddWithValue("@nome", nome);
+                comandos.Parameters.AddWithValue("@data_inicio", dataInicio);
+                comandos.Parameters.AddWithValue("@data_fim", dataFim);
+                comandos.Parameters.AddWithValue("@local", local);
+                comandos.Parameters.AddWithValue("@descricao", descricao);
+                comandos.Parameters.AddWithValue("@regras", regras);
+                comandos.Parameters.AddWithValue("@vagas", vagas);
+                comandos.Parameters.AddWithValue("@logo", caminhoNoServidor);
+                comandos.Parameters.AddWithValue("@organizadorid", UsuarioLogado.Id);// Caminho da imagem
 
-            comandos.ExecuteNonQuery();
-            conexao.Close();
+                comandos.ExecuteNonQuery();
 
-            // Limpa os campos após o cadastro
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-            pictureBox1.Image = null;
+                // Obter o ID do torneio recém-cadastrado
+                long torneioId = comandos.LastInsertedId;
 
-            MessageBox.Show("Torneio cadastrado com sucesso!");
+                // Atualizar a tabela usuarios para vincular o torneio como organizador
+                string atualizarUsuario = "UPDATE usuarios SET organizador_id = @torneioId WHERE id = @usuarioId";
+                MySqlCommand atualizarComando = new MySqlCommand(atualizarUsuario, conexao);
+                atualizarComando.Parameters.AddWithValue("@torneioId", torneioId);
+                atualizarComando.Parameters.AddWithValue("@usuarioId", UsuarioLogado.Id);
+
+                atualizarComando.ExecuteNonQuery();
+
+                MessageBox.Show("Torneio cadastrado e vinculado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Limpa os campos após o cadastro
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox5.Text = "";
+                pictureBox1.Image = null;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao cadastrar torneio: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conexao.Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -100,6 +123,18 @@ namespace Battle_Vortex_Form
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.Image = Image.FromFile(caminhoDaImagem);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            torneioAdm torneioAdm = new torneioAdm();
+            torneioAdm.Show();
+            this.Close();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

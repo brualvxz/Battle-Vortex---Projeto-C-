@@ -17,6 +17,8 @@ namespace Battle_Vortex_Form
         public Login()
         {
             InitializeComponent();
+            textBox2.UseSystemPasswordChar = true;
+            textBox2.PasswordChar = '*';
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -36,12 +38,14 @@ namespace Battle_Vortex_Form
             this.Hide();
         }
 
+        
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             string connectionString = "SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;";
-            string usuarioOuEmail = textBox1.Text; 
-            string senha = textBox2.Text; 
+            string usuarioOuEmail = textBox1.Text;
+            string senha = textBox2.Text;
 
             using (MySqlConnection conexao = new MySqlConnection(connectionString))
             {
@@ -49,56 +53,82 @@ namespace Battle_Vortex_Form
                 {
                     conexao.Open();
 
-                    // Consulta para verificar se o usuário existe no banco e obter o tipo de usuário (Admin ou Usuário)
-                    string query = "SELECT tipo FROM usuarios WHERE (nome = @usuarioOuEmail OR email = @usuarioOuEmail) AND senha = @senha";
+                    // Consulta para verificar o usuário e obter suas informações
+                    string query = "SELECT id, nome, email, tipo FROM usuarios " +
+                                   "WHERE (nome = @usuarioOuEmail OR email = @usuarioOuEmail) AND senha = @senha AND status = 'Ativo'";
                     using (MySqlCommand comando = new MySqlCommand(query, conexao))
                     {
-                        // Parâmetros para prevenir SQL Injection
                         comando.Parameters.AddWithValue("@usuarioOuEmail", usuarioOuEmail);
                         comando.Parameters.AddWithValue("@senha", senha);
 
-                        // Executar a consulta e obter o tipo de usuário
-                        object tipoUsuario = comando.ExecuteScalar();
-
-                        if (tipoUsuario != null)
+                        using (MySqlDataReader reader = comando.ExecuteReader())
                         {
-                            // Verifica o tipo do usuário no banco de dados
-                            string tipo = tipoUsuario.ToString();
+                            if (reader.Read())
+                            {
+                                // Captura as informações do usuário
+                                UsuarioLogado.Id = reader.GetInt32("id");
+                                UsuarioLogado.Nome = reader.GetString("nome");
+                                UsuarioLogado.Email = reader.GetString("email");
+                                string tipo = reader.GetString("tipo");
 
-                            if (tipo.Equals("Administrador", StringComparison.OrdinalIgnoreCase))
-                            {
-                                // Se o tipo for "Administrador", abre a tela do administrador
-                                homeAdm homeadm = new homeAdm();
-                                homeadm.Show();
-                                this.Hide(); // Esconde a tela de login
-                            }
-                            else if (tipo.Equals("Usuário", StringComparison.OrdinalIgnoreCase))
-                            {
-                                // Se o tipo for "Usuario", abre a tela do usuário
-                                homeUser homeuser = new homeUser();
-                                homeuser.Show();
+                                MessageBox.Show($"Bem-vindo, {UsuarioLogado.Nome}!");
+
+                                // Redireciona para a tela correspondente ao tipo de usuário
+                                if (tipo.Equals("Administrador", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    homeAdm homeadm = new homeAdm();
+                                    homeadm.Show();
+                                }
+                                else if (tipo.Equals("Usuário", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    homeUser homeuser = new homeUser();
+                                    homeuser.Show();
+                                }
+                                else if (tipo.Equals("Patrocinador", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    homePatrocinador homePat = new homePatrocinador();
+                                    homePat.Show();
+                                }
+                                else if (tipo.Equals("Organizador", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    homeOrganizador homeOrg = new homeOrganizador();
+                                    homeOrg.Show();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Tipo de usuário inválido.", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+
                                 this.Hide(); // Esconde a tela de login
                             }
                             else
                             {
-                                // Tipo desconhecido
-                                MessageBox.Show("Tipo de usuário inválido.", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Nome de usuário, e-mail ou senha incorretos.", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
-                        }
-                        else
-                        {
-                            // Usuário não encontrado ou senha incorreta
-                            MessageBox.Show("Nome de usuário, e-mail ou senha incorretos.", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Tratamento de erros ao conectar ao banco de dados
                     MessageBox.Show($"Erro ao conectar ao banco de dados: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
         }
     }
-    
+
+    // Classe estática para armazenar os dados do usuário logado
+    public static class UsuarioLogado
+    {
+        public static int Id { get; set; }
+        public static string Nome { get; set; }
+        public static string Email { get; set; }
+
+        public static void Limpar()
+        {
+            Id = 0;
+            Nome = null;
+            Email = null;
+        }
+    }
 }

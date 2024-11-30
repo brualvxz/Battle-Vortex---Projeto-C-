@@ -27,7 +27,7 @@ namespace Battle_Vortex_Form
             {
                 conexao.Open();
 
-                string query = "SELECT id, torneio_id, descricao, premio_principal, logo_premio_principal, premio_secundario, logo_premio_secundario, premio_terciario, logo_premio_terciario, tipo_origem, patrocinador_id FROM premios";
+                string query = "SELECT id, torneio_id, descricao, premio_principal, premio_secundario, premio_terciario, tipo_origem, patrocinador_id FROM premios";
                 MySqlCommand consultaDados = new MySqlCommand(query, conexao);
                 MySqlDataAdapter da = new MySqlDataAdapter(consultaDados);
                 DataTable dt = new DataTable();
@@ -37,9 +37,7 @@ namespace Battle_Vortex_Form
                 dataGridView1.Columns.Clear();
                 dataGridView1.DataSource = dt;
 
-                dataGridView1.Columns["logo_premio_principal"].Visible = false;
-                dataGridView1.Columns["logo_premio_secundario"].Visible = false;
-                dataGridView1.Columns["logo_premio_terciario"].Visible = false;
+               
 
                 AdicionarBotoesDataGridView();
                 PreencherComboBoxComColunas(dt);
@@ -73,44 +71,7 @@ namespace Battle_Vortex_Form
             }
         }
 
-        private void CarregarImagensPorId(string id)
-        {
-            using (MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;"))
-            {
-                conexao.Open();
-
-                string query = "SELECT logo_premio_principal, logo_premio_secundario, logo_premio_terciario FROM premios WHERE id = @id";
-                MySqlCommand cmd = new MySqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@id", id);
-
-                MySqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    string logoPrincipal = reader["logo_premio_principal"].ToString();
-                    string logoSecundario = reader["logo_premio_secundario"].ToString();
-                    string logoTerciario = reader["logo_premio_terciario"].ToString();
-
-                    
-                    if (File.Exists(logoPrincipal))
-                    {
-                        pictureBox1.Image = Image.FromFile(logoPrincipal);
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
-
-                    if (File.Exists(logoSecundario))
-                    {
-                        pictureBox2.Image = Image.FromFile(logoSecundario);
-                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
-
-                    if (File.Exists(logoTerciario))
-                    {
-                        pictureBox3.Image = Image.FromFile(logoTerciario);
-                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
-                }
-            }
-        }
+       
 
         private void PreencherComboBoxComColunas(DataTable dt)
         {
@@ -164,11 +125,6 @@ namespace Battle_Vortex_Form
                 {
                     string id = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
                     premioEx(id);
-                }
-                else // Se clicar em qualquer outra célula, trocar as fotos do prêmio
-                {
-                    string id = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
-                    CarregarImagensPorId(id);
                 }
             }
         }
@@ -253,6 +209,23 @@ namespace Battle_Vortex_Form
         private void button4_Click(object sender, EventArgs e)
         {
             LimparFiltro();
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            homeAdm home = new homeAdm();
+            home.Show();
+            this.Close();
         }
     }
     

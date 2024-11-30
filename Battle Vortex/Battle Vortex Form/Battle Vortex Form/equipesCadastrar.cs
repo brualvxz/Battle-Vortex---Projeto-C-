@@ -16,11 +16,30 @@ namespace Battle_Vortex_Form
     {
         string caminhoNoServidor;
         string nomeArquivo;
+        private int idJogadorLogado;
+
         public equipesCadastrar()
         {
             InitializeComponent();
+            ObterIdJogadorLogado();  // Garantir que o método seja chamado ao iniciar o formulário
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+        }
+
+        // Método corrigido para obter o jogador_id do usuário logado
+        private void ObterIdJogadorLogado()
+        {
+            using (MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;"))
+            {
+                conexao.Open();
+                string query = "SELECT usuarios.jogador_id FROM usuarios WHERE usuarios.id = @usuarioId";
+                MySqlCommand comando = new MySqlCommand(query, conexao);
+                comando.Parameters.AddWithValue("@usuarioId", UsuarioLogado.Id);
+                object resultado = comando.ExecuteScalar();
+
+                // Se o resultado for null, significa que o jogador não existe ou não foi encontrado
+                idJogadorLogado = resultado != null ? Convert.ToInt32(resultado) : 0;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,39 +55,75 @@ namespace Battle_Vortex_Form
                 return;
             }
 
-            MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;");
-            conexao.Open();
-
-            try
+            if (idJogadorLogado == 0)
             {
-                
-                string inserir = "INSERT INTO `equipes`(`nome`, `localidade`, `email`, `data_criacao`, `logo`) " +
-                                 "VALUES(@nome, @localidade, @email, @data_criacao, @logo)";
-
-                MySqlCommand comandos = new MySqlCommand(inserir, conexao);
-                comandos.Parameters.AddWithValue("@nome", nome);
-                comandos.Parameters.AddWithValue("@localidade", localidade);
-                comandos.Parameters.AddWithValue("@email", email);
-                comandos.Parameters.AddWithValue("@data_criacao", dataCriacao.ToString("yyyy-MM-dd")); 
-                comandos.Parameters.AddWithValue("@logo", caminhoNoServidor); 
-
-                comandos.ExecuteNonQuery();
-
-                
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = ""; 
-                pictureBox1.Image = null;
-
-                MessageBox.Show("Equipe cadastrada com sucesso!");
+                MessageBox.Show("Você ainda não possui um perfil de jogador. Redirecionando para a tela de cadastro de jogador...");
+                jogadoresUser formJogadores = new jogadoresUser();
+                formJogadores.Show();
+                this.Close();
+                return;
             }
-            catch (MySqlException ex)
+
+            using (MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;"))
             {
-                MessageBox.Show($"Erro ao cadastrar equipe: {ex.Message}");
-            }
-            finally
-            {
-                conexao.Close();
+                conexao.Open();
+                MySqlTransaction transaction = conexao.BeginTransaction(); // Inicia a transação para garantir que as duas operações aconteçam juntas
+
+                try
+                {
+                    // Inserir nova equipe com todas as informações, incluindo email, data de criação e o id do jogador como capitão
+                    string inserirEquipe = "INSERT INTO `equipes`(`nome`, `localidade`, `email`, `data_criacao`, `logo`, `capitao_id`) " +
+                                           "VALUES(@nome, @localidade, @email, @data_criacao, @logo, @capitao_id)";
+
+                    MySqlCommand comandos = new MySqlCommand(inserirEquipe, conexao, transaction);
+                    comandos.Parameters.AddWithValue("@nome", nome);
+                    comandos.Parameters.AddWithValue("@localidade", localidade);
+                    comandos.Parameters.AddWithValue("@email", email);
+                    comandos.Parameters.AddWithValue("@data_criacao", dataCriacao.ToString("yyyy-MM-dd"));
+                    comandos.Parameters.AddWithValue("@logo", caminhoNoServidor);
+                    comandos.Parameters.AddWithValue("@capitao_id", idJogadorLogado); // Usando idJogadorLogado
+
+                    comandos.ExecuteNonQuery();
+
+                    // Capturar o ID da equipe recém-criada
+                    string ultimoIdEquipe = "SELECT LAST_INSERT_ID()";
+                    MySqlCommand comandoIdEquipe = new MySqlCommand(ultimoIdEquipe, conexao, transaction);
+                    int idEquipeCriada = Convert.ToInt32(comandoIdEquipe.ExecuteScalar());
+
+                    // Atualizar o jogador logado para vincular à equipe criada
+                    string atualizarJogador = "UPDATE `jogadores` SET `equipe_id` = @equipe_id WHERE `id` = @idJogadorLogado";
+                    MySqlCommand comandoAtualizarJogador = new MySqlCommand(atualizarJogador, conexao, transaction);
+                    comandoAtualizarJogador.Parameters.AddWithValue("@equipe_id", idEquipeCriada);
+                    comandoAtualizarJogador.Parameters.AddWithValue("@idJogadorLogado", idJogadorLogado);
+
+                    comandoAtualizarJogador.ExecuteNonQuery();
+
+                    // Agora, adicionar o jogador à tabela 'equipes_jogadores'
+                    string inserirEquipesJogadores = "INSERT INTO `equipes_jogadores` (`jogador_id`, `equipe_id`) " +
+                                                     "VALUES (@jogador_id, @equipe_id)";
+                    MySqlCommand comandoInserirEquipesJogadores = new MySqlCommand(inserirEquipesJogadores, conexao, transaction);
+                    comandoInserirEquipesJogadores.Parameters.AddWithValue("@jogador_id", idJogadorLogado);
+                    comandoInserirEquipesJogadores.Parameters.AddWithValue("@equipe_id", idEquipeCriada);
+
+                    comandoInserirEquipesJogadores.ExecuteNonQuery();
+
+                    // Commit da transação
+                    transaction.Commit();
+
+                    // Limpar campos após o cadastro
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    pictureBox1.Image = null;
+
+                    MessageBox.Show("Equipe cadastrada com sucesso e jogador vinculado!");
+                }
+                catch (MySqlException ex)
+                {
+                    // Se ocorrer erro, reverter a transação
+                    transaction.Rollback();
+                    MessageBox.Show($"Erro ao cadastrar equipe: {ex.Message}");
+                }
             }
         }
 
@@ -100,9 +155,18 @@ namespace Battle_Vortex_Form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            equipesAdm equipesAdm = new equipesAdm();
-            equipesAdm.Show();
+       
             this.Close();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

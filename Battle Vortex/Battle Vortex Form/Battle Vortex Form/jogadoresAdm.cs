@@ -195,7 +195,7 @@ namespace Battle_Vortex_Form
         {
             jogadoresCadastrar jogadoresCadastrar = new jogadoresCadastrar();
             jogadoresCadastrar.Show();
-            this.Close();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -255,6 +255,17 @@ namespace Battle_Vortex_Form
             homeAdm homeadm = new homeAdm();
             homeadm.Show();
             this.Hide();
+        }
+
+        private void LimparFiltro()
+        {
+            comboBox1.SelectedIndex = -1;
+            textBox1.Clear();
+            CarregarDados();
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LimparFiltro();
         }
     }
 }

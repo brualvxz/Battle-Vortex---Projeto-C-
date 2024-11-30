@@ -158,11 +158,6 @@ namespace Battle_Vortex_Form
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 

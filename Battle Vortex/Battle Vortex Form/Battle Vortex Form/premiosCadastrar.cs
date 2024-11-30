@@ -16,8 +16,7 @@ namespace Battle_Vortex_Form
     public partial class premiosCadastrar : Form
     {
 
-        string caminhoNoServidor1, caminhoNoServidor2, caminhoNoServidor3;
-        string nomeArquivo1, nomeArquivo2, nomeArquivo3;
+       
 
         public premiosCadastrar()
         {
@@ -92,89 +91,11 @@ namespace Battle_Vortex_Form
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif";
+   
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string caminhoDaImagem = openFileDialog.FileName;
+   
 
-                string pastaDestino = @"D:\Battle Vortex\Imagens\fotobanco";
-                nomeArquivo1 = Path.GetFileName(caminhoDaImagem);
-                caminhoNoServidor1 = Path.Combine(pastaDestino, nomeArquivo1);
-
-                try
-                {
-                    File.Copy(caminhoDaImagem, caminhoNoServidor1, true); 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao copiar a imagem: {ex.Message}");
-                }
-
-                
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox1.Image = Image.FromFile(caminhoDaImagem);
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string caminhoDaImagem = openFileDialog.FileName;
-
-                string pastaDestino = @"D:\Battle Vortex\Imagens\fotobanco";
-                nomeArquivo2 = Path.GetFileName(caminhoDaImagem);
-                caminhoNoServidor2 = Path.Combine(pastaDestino, nomeArquivo2);
-
-                try
-                {
-                    File.Copy(caminhoDaImagem, caminhoNoServidor2, true); 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao copiar a imagem: {ex.Message}");
-                }
-
-               
-                pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox2.Image = Image.FromFile(caminhoDaImagem);
-            }
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string caminhoDaImagem = openFileDialog.FileName;
-
-                string pastaDestino = @"D:\Battle Vortex\Imagens\fotobanco";
-                nomeArquivo3 = Path.GetFileName(caminhoDaImagem);
-                caminhoNoServidor3 = Path.Combine(pastaDestino, nomeArquivo3);
-
-                try
-                {
-                    File.Copy(caminhoDaImagem, caminhoNoServidor3, true); 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao copiar a imagem: {ex.Message}");
-                }
-
-                
-                pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox3.Image = Image.FromFile(caminhoDaImagem);
-            }
-        }
+    
 
         private void premiosCadastrar_Load(object sender, EventArgs e)
         {
@@ -215,8 +136,7 @@ namespace Battle_Vortex_Form
 
             string inserir = "INSERT INTO `premios`(`torneio_id`, `descricao`, `premio_principal`, `premio_secundario`, `premio_terciario`, " +
                             "`logo_premio_principal`, `logo_premio_secundario`, `logo_premio_terciario`, `tipo_origem`, `patrocinador_id`) " +
-                            "VALUES(@torneio_id, @descricao, @premio_principal, @premio_secundario, @premio_terciario, @logo_premio_principal, " +
-                            "@logo_premio_secundario, @logo_premio_terciario, @tipo_origem, @patrocinador_id)";
+                            "VALUES(@torneio_id, @descricao, @premio_principal, @premio_secundario, @premio_terciario,  @tipo_origem, @patrocinador_id)";
 
 
             MySqlCommand comandos = new MySqlCommand(inserir, conexao);
@@ -228,9 +148,7 @@ namespace Battle_Vortex_Form
             comandos.Parameters.AddWithValue("@premio_principal", premioPrincipal);
             comandos.Parameters.AddWithValue("@premio_secundario", premioSecundario);
             comandos.Parameters.AddWithValue("@premio_terciario", premioTerciario);
-            comandos.Parameters.AddWithValue("@logo_premio_principal", caminhoNoServidor1);
-            comandos.Parameters.AddWithValue("@logo_premio_secundario", caminhoNoServidor2);
-            comandos.Parameters.AddWithValue("@logo_premio_terciario", caminhoNoServidor3);
+            
             
             comandos.ExecuteNonQuery(); //executa o comando no banco
 
@@ -246,9 +164,7 @@ namespace Battle_Vortex_Form
             comboBox1.SelectedIndex = -1;
             comboBox2.SelectedIndex = -1;
             comboBox3.SelectedIndex = 0;
-            pictureBox1.Image = null;
-            pictureBox2.Image = null;
-            pictureBox3.Image = null;
+           
 
             MessageBox.Show("Prêmio cadastrado com sucesso!");
         }

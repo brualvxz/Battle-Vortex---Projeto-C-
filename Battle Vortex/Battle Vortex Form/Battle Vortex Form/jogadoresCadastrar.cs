@@ -19,25 +19,16 @@ namespace Battle_Vortex_Form
         string caminhoNoServidor;
         string nomeArquivo;
 
+
         public jogadoresCadastrar()
         {
 
             InitializeComponent();
+
+
             // Estabelece uma conexão com o banco de dados eventosbv
             MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;");
             conexao.Open();  // Abre a conexão com o banco de dados
-
-            // Consulta SQL para selecionar o código e o nome das equipes para a primeira ComboBox
-            string query1 = "SELECT id, nome FROM equipes";
-            MySqlCommand comandos1 = new MySqlCommand(query1, conexao);
-            MySqlDataAdapter da1 = new MySqlDataAdapter(comandos1);
-            DataTable dt1 = new DataTable();
-            da1.Fill(dt1);
-
-            // Preenche a primeira ComboBox
-            comboBox1.DataSource = dt1;
-            comboBox1.DisplayMember = "nome";
-            comboBox1.ValueMember = "id";
 
             // Consulta SQL para selecionar o código e o nome dos personagens para a segunda ComboBox
             string query2 = "SELECT id, nome FROM personagens";
@@ -45,18 +36,6 @@ namespace Battle_Vortex_Form
             MySqlDataAdapter da2 = new MySqlDataAdapter(comandos2);
             DataTable dt2 = new DataTable();
             da2.Fill(dt2);
-
-            // Verifica se a primeira `ComboBox` possui itens para remover do segundo conjunto, evitando repetição
-            foreach (DataRow row in dt1.Rows)
-            {
-                for (int i = dt2.Rows.Count - 1; i >= 0; i--)
-                {
-                    if (dt2.Rows[i]["nome"].ToString() == row["nome"].ToString())
-                    {
-                        dt2.Rows.RemoveAt(i);
-                    }
-                }
-            }
 
             // Preenche a segunda ComboBox com os valores que restaram após a verificação
             comboBox2.DataSource = dt2;
@@ -67,7 +46,7 @@ namespace Battle_Vortex_Form
             conexao.Close();
 
             // Limpa a seleção das ComboBox
-            comboBox1.SelectedIndex = -1;
+        
             comboBox2.SelectedIndex = -1;
         }
 
@@ -78,7 +57,7 @@ namespace Battle_Vortex_Form
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string caminhoDaImagem = openFileDialog.FileName;   
+                string caminhoDaImagem = openFileDialog.FileName;
 
                 string pastaDestino = @"G:\Battle Vortex\Imagens\fotobanco";
                 nomeArquivo = Path.GetFileName(caminhoDaImagem);
@@ -101,41 +80,66 @@ namespace Battle_Vortex_Form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string campo1 = textBox1.Text;
-            string campo2 = textBox2.Text;
-            string campo3 = textBox3.Text;
+            // Conexão com o banco de dados
+            MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;");
+            conexao.Open();
 
-            MySqlConnection conexao = new MySqlConnection();
-            conexao.ConnectionString = ("SERVER=127.0.0.1; DATABASE=eventosbv; UID= root ; PASSWORD = ; ");//indica o caminho e dados do banco
-            conexao.Open();//abrindo o banco
+            try
+            {
+                // Verifica se o usuário logado já possui um jogador cadastrado
+                string verificaJogadorQuery = "SELECT jogador_id FROM usuarios WHERE id = @usuarioId";
+                MySqlCommand verificaComando = new MySqlCommand(verificaJogadorQuery, conexao);
+                verificaComando.Parameters.AddWithValue("@usuarioId", UsuarioLogado.Id);
 
-            string inserir = "INSERT INTO jogadores(`foto`, `nome`, `nickname`, `equipe_id`, `personagemMain_id`, `conquistas`) " +
-                 "VALUES(@foto, @nome, @nickname, @equipe_id, @personagemMain_id, @conquistas)"; 
+                object resultado = verificaComando.ExecuteScalar();
+                if (resultado != null && resultado != DBNull.Value)
+                {
+                    MessageBox.Show("Você já possui um jogador cadastrado nesta conta.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Interrompe o processo se já houver jogador vinculado
+                }
 
-            MySqlCommand comandos = new MySqlCommand(inserir, conexao);
-            comandos.Parameters.AddWithValue("@foto", caminhoNoServidor);  // Insere o caminho da imagem
-            comandos.Parameters.AddWithValue("@nome", campo1);
-            comandos.Parameters.AddWithValue("@nickname", campo2);
-            comandos.Parameters.AddWithValue("@equipe_id", comboBox1.SelectedValue);
-            comandos.Parameters.AddWithValue("@personagemMain_id", comboBox2.SelectedValue);
-            comandos.Parameters.AddWithValue("@conquistas", campo3);
-         
+                // Cadastrar novo jogador
+                string inserirJogador = "INSERT INTO jogadores (`foto`, `nome`, `nickname`,`personagemMain_id`, `conquistas`) " +
+                                        "VALUES (@foto, @nome, @nickname, @personagemMain_id, @conquistas)";
+                MySqlCommand comandos = new MySqlCommand(inserirJogador, conexao);
+                comandos.Parameters.AddWithValue("@foto", caminhoNoServidor);
+                comandos.Parameters.AddWithValue("@nome", textBox1.Text);
+                comandos.Parameters.AddWithValue("@nickname", textBox2.Text);
+                comandos.Parameters.AddWithValue("@personagemMain_id", comboBox2.SelectedValue);
+                comandos.Parameters.AddWithValue("@conquistas", textBox3.Text);
 
-            comandos.ExecuteNonQuery(); //executa o comando no banco
+                comandos.ExecuteNonQuery();
 
-            conexao.Close(); //fechando a conexão com o banco de dados
+                // Obter o ID do jogador recém-cadastrado
+                long jogadorId = comandos.LastInsertedId;
 
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            pictureBox1.Image = null;
+                // Atualizar a tabela usuarios para vincular o jogador ao usuário logado
+                string atualizarUsuario = "UPDATE usuarios SET jogador_id = @jogadorId WHERE id = @usuarioId";
+                MySqlCommand atualizarComando = new MySqlCommand(atualizarUsuario, conexao);
+                atualizarComando.Parameters.AddWithValue("@jogadorId", jogadorId);
+                atualizarComando.Parameters.AddWithValue("@usuarioId", UsuarioLogado.Id);
 
-            // Limpa a seleção das ComboBox
-            comboBox1.SelectedIndex = -1;
-            comboBox2.SelectedIndex = -1;
-            MessageBox.Show("Jogador cadastrado com Sucesso!!!");
+                atualizarComando.ExecuteNonQuery();
 
-           
+                MessageBox.Show("Jogador cadastrado e vinculado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Limpar campos após o cadastro
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                pictureBox1.Image = null;
+               
+                comboBox2.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao cadastrar jogador: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
         }
 
         private void jogadoresCadastrar_Load(object sender, EventArgs e)
@@ -145,8 +149,7 @@ namespace Battle_Vortex_Form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            jogadoresAdm jogadores = new jogadoresAdm();   
-            jogadores.Show();
+
             this.Close();
         }
 

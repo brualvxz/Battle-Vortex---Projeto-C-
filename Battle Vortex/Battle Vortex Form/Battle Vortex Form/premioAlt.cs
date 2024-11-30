@@ -15,11 +15,7 @@ namespace Battle_Vortex_Form
 {
     public partial class premioAlt : Form
     {
-        string caminhoNoServidor1, caminhoNoServidor2, caminhoNoServidor3;
-        string nomeArquivo1, nomeArquivo2, nomeArquivo3;
-
-       
-
+      
         public premioAlt(string id)
         {
             InitializeComponent();
@@ -40,33 +36,7 @@ namespace Battle_Vortex_Form
                             textBox1.Text = resultado["premio_principal"].ToString();
                             textBox2.Text = resultado["premio_secundario"].ToString();
                             textBox3.Text = resultado["premio_terciario"].ToString();
-                            textBox5.Text = resultado["id"].ToString();
-
-                            // Carregar imagens
-                            string caminhoImagemPrincipal = resultado["logo_premio_principal"].ToString();
-                            if (!string.IsNullOrEmpty(caminhoImagemPrincipal) && File.Exists(caminhoImagemPrincipal))
-                            {
-                                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                                pictureBox1.Image = Image.FromFile(caminhoImagemPrincipal);
-                                caminhoNoServidor1 = caminhoImagemPrincipal;
-                            }
-
-                            string caminhoImagemSecundario = resultado["logo_premio_secundario"].ToString();
-                            if (!string.IsNullOrEmpty(caminhoImagemSecundario) && File.Exists(caminhoImagemSecundario))
-                            {
-                                pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-                                pictureBox2.Image = Image.FromFile(caminhoImagemSecundario);
-                                caminhoNoServidor2 = caminhoImagemSecundario;
-                            }
-
-                            string caminhoImagemTerciario = resultado["logo_premio_terciario"].ToString();
-                            if (!string.IsNullOrEmpty(caminhoImagemTerciario) && File.Exists(caminhoImagemTerciario))
-                            {
-                                pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-                                pictureBox3.Image = Image.FromFile(caminhoImagemTerciario);
-                                caminhoNoServidor3 = caminhoImagemTerciario;
-                            }
-
+                       
                             // Preencher comboboxes
                             comboBox1.SelectedValue = resultado["torneio_id"];
                             comboBox2.SelectedItem = resultado["tipo_origem"];
@@ -135,15 +105,7 @@ namespace Battle_Vortex_Form
 
             conexao.Close();
         }
-        private void CarregarImagem(string caminhoImagem, PictureBox pictureBox, ref string caminhoNoServidor)
-        {
-            if (!string.IsNullOrEmpty(caminhoImagem) && File.Exists(caminhoImagem))
-            {
-                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(caminhoImagem);
-                caminhoNoServidor = caminhoImagem;
-            }
-        }
+       
 
         private void premioAlt_Load(object sender, EventArgs e)
         {
@@ -155,80 +117,17 @@ namespace Battle_Vortex_Form
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Imagens|*.jpg;*.jpeg;*.png";
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string caminhoOrigem = openFileDialog.FileName;
-                string pastaDestino = @"D:\Battle Vortex\Imagens\fotobanco";
-                nomeArquivo1 = Path.GetFileName(caminhoOrigem);
-                caminhoNoServidor1 = Path.Combine(pastaDestino, nomeArquivo1);
-
-                try
-                {
-                    File.Copy(caminhoOrigem, caminhoNoServidor1, true);
-                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pictureBox1.Image = Image.FromFile(caminhoOrigem);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao copiar a imagem: {ex.Message}");
-                }
-            }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Imagens|*.jpg;*.jpeg;*.png";
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string caminhoOrigem = openFileDialog.FileName;
-                string pastaDestino = @"D:\Battle Vortex\Imagens\fotobanco";
-                nomeArquivo2 = Path.GetFileName(caminhoOrigem);
-                caminhoNoServidor2 = Path.Combine(pastaDestino, nomeArquivo2);
-
-                try
-                {
-                    File.Copy(caminhoOrigem, caminhoNoServidor2, true);
-                    pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pictureBox2.Image = Image.FromFile(caminhoOrigem);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao copiar a imagem: {ex.Message}");
-                }
-            }
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Imagens|*.jpg;*.jpeg;*.png";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string caminhoOrigem = openFileDialog.FileName;
-                string pastaDestino = @"D:\Battle Vortex\Imagens\fotobanco";
-                nomeArquivo3 = Path.GetFileName(caminhoOrigem);
-                caminhoNoServidor3 = Path.Combine(pastaDestino, nomeArquivo3);
-
-                try
-                {
-                    File.Copy(caminhoOrigem, caminhoNoServidor3, true);
-                    pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pictureBox3.Image = Image.FromFile(caminhoOrigem);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao copiar a imagem: {ex.Message}");
-                }
-            }
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -242,8 +141,7 @@ namespace Battle_Vortex_Form
                     // Atualizar dados do prêmio
                     MySqlCommand comando = new MySqlCommand(@"UPDATE premios SET descricao = @descricao, premio_principal = @premioPrincipal,
                         premio_secundario = @premioSecundario, premio_terciario = @premioTerciario, 
-                        logo_premio_principal = @logoPremioPrincipal, logo_premio_secundario = @logoPremioSecundario, 
-                        logo_premio_terciario = @logoPremioTerciario, tipo_origem = @tipoOrigem, patrocinador_id = @patrocinadorId
+                        tipo_origem = @tipoOrigem, patrocinador_id = @patrocinadorId
                         WHERE id = @id", conexao);
 
                     // Adicionando parâmetros
@@ -251,12 +149,10 @@ namespace Battle_Vortex_Form
                     comando.Parameters.AddWithValue("@premioPrincipal", textBox1.Text);
                     comando.Parameters.AddWithValue("@premioSecundario", textBox2.Text);
                     comando.Parameters.AddWithValue("@premioTerciario", textBox3.Text);
-                    comando.Parameters.AddWithValue("@logoPremioPrincipal", caminhoNoServidor1);
-                    comando.Parameters.AddWithValue("@logoPremioSecundario", caminhoNoServidor2);
-                    comando.Parameters.AddWithValue("@logoPremioTerciario", caminhoNoServidor3);
+               
                     comando.Parameters.AddWithValue("@tipoOrigem", comboBox2.SelectedItem.ToString());
                     comando.Parameters.AddWithValue("@patrocinadorId", comboBox3.SelectedValue);
-                    comando.Parameters.AddWithValue("@id", textBox5.Text);
+          
 
                     int linhasAfetadas = comando.ExecuteNonQuery();
 

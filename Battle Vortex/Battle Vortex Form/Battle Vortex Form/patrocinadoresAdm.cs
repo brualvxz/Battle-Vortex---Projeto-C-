@@ -243,5 +243,16 @@ namespace Battle_Vortex_Form
             homeadm.Show();
             this.Hide();
         }
+        private void LimparFiltro()
+        {
+            comboBox1.SelectedIndex = -1;
+            textBox1.Clear();
+            CarregarDados();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+             LimparFiltro ();
+        }
     }
 }

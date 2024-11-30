@@ -59,11 +59,23 @@
     <Compile Include="classificacaoAdm.Designer.cs">
       <DependentUpon>classificacaoAdm.cs</DependentUpon>
     </Compile>
+    <Compile Include="classificacaoAlt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classificacaoAlt.Designer.cs">
+      <DependentUpon>classificacaoAlt.cs</DependentUpon>
+    </Compile>
     <Compile Include="classificacaoCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="classificacaoCadastrar.Designer.cs">
       <DependentUpon>classificacaoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classificacaoUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classificacaoUser.Designer.cs">
+      <DependentUpon>classificacaoUser.cs</DependentUpon>
     </Compile>
     <Compile Include="equipesAdm.cs">
       <SubType>Form</SubType>
@@ -82,6 +94,24 @@
     </Compile>
     <Compile Include="equipesCadastrar.Designer.cs">
       <DependentUpon>equipesCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="equipesUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="equipesUser.Designer.cs">
+      <DependentUpon>equipesUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homeOrganizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeOrganizador.Designer.cs">
+      <DependentUpon>homeOrganizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homePatrocinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePatrocinador.Designer.cs">
+      <DependentUpon>homePatrocinador.cs</DependentUpon>
     </Compile>
     <Compile Include="jogadoresAdm.cs">
       <SubType>Form</SubType>
@@ -113,6 +143,18 @@
     <Compile Include="jogadoresCadastrar.Designer.cs">
       <DependentUpon>jogadoresCadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="jogadoresEquipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jogadoresEquipes.Designer.cs">
+      <DependentUpon>jogadoresEquipes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jogadoresUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jogadoresUser.Designer.cs">
+      <DependentUpon>jogadoresUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,11 +179,41 @@
     <Compile Include="patrocinadoresCadastrar.Designer.cs">
       <DependentUpon>patrocinadoresCadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="patrocinadoresPat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patrocinadoresPat.Designer.cs">
+      <DependentUpon>patrocinadoresPat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patrocinadoresUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patrocinadoresUser.Designer.cs">
+      <DependentUpon>patrocinadoresUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perfil.Designer.cs">
+      <DependentUpon>perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="perfilAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perfilAlterar.Designer.cs">
+      <DependentUpon>perfilAlterar.cs</DependentUpon>
+    </Compile>
     <Compile Include="premioAlt.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="premioAlt.Designer.cs">
       <DependentUpon>premioAlt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="premioOrganizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="premioOrganizador.Designer.cs">
+      <DependentUpon>premioOrganizador.cs</DependentUpon>
     </Compile>
     <Compile Include="premiosAdm.cs">
       <SubType>Form</SubType>
@@ -157,17 +229,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rankingAlt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="rankingAlt.Designer.cs">
-      <DependentUpon>rankingAlt.cs</DependentUpon>
-    </Compile>
     <Compile Include="torneioAdm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="torneioAdm.Designer.cs">
       <DependentUpon>torneioAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="torneioInscrever.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="torneioInscrever.Designer.cs">
+      <DependentUpon>torneioInscrever.cs</DependentUpon>
+    </Compile>
+    <Compile Include="torneioOrganizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="torneioOrganizador.Designer.cs">
+      <DependentUpon>torneioOrganizador.cs</DependentUpon>
     </Compile>
     <Compile Include="torneiosAlt.cs">
       <SubType>Form</SubType>
@@ -181,14 +259,26 @@
     <Compile Include="torneiosCadastrar.Designer.cs">
       <DependentUpon>torneiosCadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="torneioUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="torneioUser.Designer.cs">
+      <DependentUpon>torneioUser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="cadastro.resx">
       <DependentUpon>cadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="classificacaoAdm.resx">
       <DependentUpon>classificacaoAdm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="classificacaoAlt.resx">
+      <DependentUpon>classificacaoAlt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="classificacaoCadastrar.resx">
       <DependentUpon>classificacaoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classificacaoUser.resx">
+      <DependentUpon>classificacaoUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="equipesAdm.resx">
       <DependentUpon>equipesAdm.cs</DependentUpon>
@@ -199,8 +289,17 @@
     <EmbeddedResource Include="equipesCadastrar.resx">
       <DependentUpon>equipesCadastrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="equipesUser.resx">
+      <DependentUpon>equipesUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="homeAdm.resx">
       <DependentUpon>homeAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeOrganizador.resx">
+      <DependentUpon>homeOrganizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePatrocinador.resx">
+      <DependentUpon>homePatrocinador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homeUser.resx">
       <DependentUpon>homeUser.cs</DependentUpon>
@@ -214,6 +313,12 @@
     <EmbeddedResource Include="jogadoresCadastrar.resx">
       <DependentUpon>jogadoresCadastrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="jogadoresEquipes.resx">
+      <DependentUpon>jogadoresEquipes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jogadoresUser.resx">
+      <DependentUpon>jogadoresUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,8 +331,23 @@
     <EmbeddedResource Include="patrocinadoresCadastrar.resx">
       <DependentUpon>patrocinadoresCadastrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="patrocinadoresPat.resx">
+      <DependentUpon>patrocinadoresPat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patrocinadoresUser.resx">
+      <DependentUpon>patrocinadoresUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perfil.resx">
+      <DependentUpon>perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perfilAlterar.resx">
+      <DependentUpon>perfilAlterar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="premioAlt.resx">
       <DependentUpon>premioAlt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="premioOrganizador.resx">
+      <DependentUpon>premioOrganizador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="premiosAdm.resx">
       <DependentUpon>premiosAdm.cs</DependentUpon>
@@ -248,11 +368,20 @@
     <EmbeddedResource Include="torneioAdm.resx">
       <DependentUpon>torneioAdm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="torneioInscrever.resx">
+      <DependentUpon>torneioInscrever.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="torneioOrganizador.resx">
+      <DependentUpon>torneioOrganizador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="torneiosAlt.resx">
       <DependentUpon>torneiosAlt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="torneiosCadastrar.resx">
       <DependentUpon>torneiosCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="torneioUser.resx">
+      <DependentUpon>torneioUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -269,6 +398,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Home para todos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cadastro Patrocinador usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cadastro Patrocinador, para o patrocinador e adm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classificação.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipe cadastro, para usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home para todos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jogador, para usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premios para adm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premios para usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torneio para quem joga, usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torneio para quem pode cadastrar %28organizador e adm%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home para todos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro classificação1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro jogador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro patrocinador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro premios1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro torneio2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro equipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt classificação.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt equipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt jogador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt patrocinador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt torneio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

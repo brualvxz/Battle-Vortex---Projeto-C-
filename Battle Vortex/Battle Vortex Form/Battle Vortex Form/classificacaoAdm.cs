@@ -142,7 +142,7 @@ namespace Battle_Vortex_Form
         private void rankingAlt(string id)
         {
             // Abre o formulário de alteração com o ID do ranking
-            rankingAlt alterarForm = new rankingAlt(id);
+            classificacaoAlt alterarForm = new classificacaoAlt(id);
             alterarForm.ShowDialog();
 
             // Recarrega os dados após o formulário de alteração ser fechado

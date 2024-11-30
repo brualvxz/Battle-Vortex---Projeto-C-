@@ -189,7 +189,7 @@ namespace Battle_Vortex_Form
         {
             equipesCadastrar equipesCadastrar = new equipesCadastrar();
             equipesCadastrar.Show();
-            this.Close();
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -247,6 +247,16 @@ namespace Battle_Vortex_Form
         private void button4_Click(object sender, EventArgs e)
         {
             LimparFiltro();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

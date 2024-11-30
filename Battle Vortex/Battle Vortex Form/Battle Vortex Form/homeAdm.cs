@@ -62,5 +62,12 @@ namespace Battle_Vortex_Form
             classificacaoAdm.Show();
             this.Close();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            perfil perfil = new perfil();
+            perfil.Show();
+            this.Close();
+        }
     }
 }

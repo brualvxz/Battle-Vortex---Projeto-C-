@@ -40,6 +40,7 @@ namespace Battle_Vortex_Form
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -47,113 +48,142 @@ namespace Battle_Vortex_Form
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(55, 98);
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(83, 152);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 23);
+            this.button1.Size = new System.Drawing.Size(324, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Consultar Patrocinadores:";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Consultar Patrocinadores";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(641, 98);
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(929, 195);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 23);
+            this.button2.Size = new System.Drawing.Size(193, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "Veja os premios";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(24, 401);
+            this.button3.BackColor = System.Drawing.Color.Black;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Location = new System.Drawing.Point(33, 605);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 23);
+            this.button3.Size = new System.Drawing.Size(200, 23);
             this.button3.TabIndex = 2;
-            this.button3.Text = "vizualizar as equipes";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Text = "Vizualizar as equipes";
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(177, 401);
+            this.button4.BackColor = System.Drawing.Color.Black;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(255, 605);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(134, 23);
+            this.button4.Size = new System.Drawing.Size(202, 23);
             this.button4.TabIndex = 3;
-            this.button4.Text = "visualizar jogadores:";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Text = "Visualizar jogadores";
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(556, 401);
+            this.button5.BackColor = System.Drawing.Color.Black;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(758, 597);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(167, 23);
+            this.button5.Size = new System.Drawing.Size(321, 23);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Participe dos Torneios:";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Text = "Participe dos Torneios";
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(520, 348);
+            this.button6.BackColor = System.Drawing.Color.PaleGreen;
+            this.button6.ForeColor = System.Drawing.Color.OliveDrab;
+            this.button6.Location = new System.Drawing.Point(733, 523);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(163, 46);
             this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Text = "Mais Informações...";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(661, 348);
+            this.button7.BackColor = System.Drawing.Color.Indigo;
+            this.button7.ForeColor = System.Drawing.Color.BlueViolet;
+            this.button7.Location = new System.Drawing.Point(943, 523);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(163, 46);
             this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Text = "Mais Informações...";
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(496, 98);
+            this.button8.BackColor = System.Drawing.Color.Black;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(718, 195);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(127, 23);
+            this.button8.Size = new System.Drawing.Size(193, 23);
             this.button8.TabIndex = 7;
             this.button8.Text = "Veja a classificao";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(24, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 83);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 63);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(124, 57);
+            this.pictureBox2.Location = new System.Drawing.Point(178, 83);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(86, 35);
+            this.pictureBox2.Size = new System.Drawing.Size(133, 63);
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(225, 57);
+            this.pictureBox3.Location = new System.Drawing.Point(324, 83);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(86, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(133, 63);
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Black;
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(403, 12);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(321, 23);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Perfil";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // homeAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.Home_para_todos;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.Home_para_todos2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1164, 675);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -187,5 +217,6 @@ namespace Battle_Vortex_Form
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button9;
     }
 }

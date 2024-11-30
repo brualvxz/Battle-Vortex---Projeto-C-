@@ -16,6 +16,14 @@ namespace Battle_Vortex_Form
         public cadastro()
         {
             InitializeComponent();
+
+            textBox3.UseSystemPasswordChar = true;
+            textBox4.UseSystemPasswordChar = true;
+
+            textBox3.PasswordChar = '*';
+
+            textBox4.PasswordChar = '*';
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -125,6 +133,11 @@ namespace Battle_Vortex_Form
         }
 
         private void cadastro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

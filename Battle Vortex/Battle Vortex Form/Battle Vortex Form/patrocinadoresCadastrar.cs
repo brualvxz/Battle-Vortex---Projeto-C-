@@ -31,38 +31,65 @@ namespace Battle_Vortex_Form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string campo1 = textBox1.Text;
-            
-            string campo3 = textBox3.Text;
-
-            MySqlConnection conexao = new MySqlConnection();
-            conexao.ConnectionString = ("SERVER=127.0.0.1; DATABASE=eventosbv; UID= root ; PASSWORD = ; ");
+            // Conexão com o banco de dados
+            MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;");
             conexao.Open();
 
-            string inserir = "INSERT INTO `patrocinadores`(`logo`, `nome`, `conquistas`) " +
-                 "VALUES(@logo, @nome, @conquistas)";
+            try
+            {
+                // Verifica se o usuário logado já possui um patrocinador vinculado
+                string verificaPatrocinadorQuery = "SELECT patrocinador_id FROM usuarios WHERE id = @usuarioId";
+                MySqlCommand verificaComando = new MySqlCommand(verificaPatrocinadorQuery, conexao);
+                verificaComando.Parameters.AddWithValue("@usuarioId", UsuarioLogado.Id);
 
-            MySqlCommand comandos = new MySqlCommand(inserir, conexao);
-            comandos.Parameters.AddWithValue("@logo", caminhoNoServidor); 
-            comandos.Parameters.AddWithValue("@nome", campo1);
-            
-            comandos.Parameters.AddWithValue("@conquistas", campo3);
+                object resultado = verificaComando.ExecuteScalar();
+                if (resultado != null && resultado != DBNull.Value)
+                {
+                    MessageBox.Show("Você já possui um patrocinador cadastrado nesta conta.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Interrompe o processo se já houver patrocinador vinculado
+                }
+
+                string inserirPatrocinador = "INSERT INTO patrocinadores (`nome`, `conquistas`, `logo`, `dono_id`) " +
+                              "VALUES (@nome, @conquistas, @logo, @donoId)";
+                MySqlCommand comandos = new MySqlCommand(inserirPatrocinador, conexao);
+                comandos.Parameters.AddWithValue("@nome", textBox1.Text);
+                comandos.Parameters.AddWithValue("@conquistas", textBox3.Text);
+                comandos.Parameters.AddWithValue("@logo", caminhoNoServidor);
+                
+                comandos.Parameters.AddWithValue("@donoId", UsuarioLogado.Id); // Vincula o patrocinador ao usuário logado
 
 
-            comandos.ExecuteNonQuery(); 
 
-            conexao.Close(); 
+                comandos.ExecuteNonQuery();
 
-            textBox1.Text = "";
-          
-            textBox3.Text = "";
-            pictureBox1.Image = null;
+                // Obter o ID do patrocinador recém-cadastrado
+                long patrocinadorId = comandos.LastInsertedId;
 
-           
-           
-        
-            MessageBox.Show("Patrocinio cadastrado com Sucesso!!!");
+                // Atualizar a tabela usuarios para vincular o patrocinador ao usuário logado
+                string atualizarUsuario = "UPDATE usuarios SET patrocinador_id = @patrocinadorId WHERE id = @usuarioId";
+                MySqlCommand atualizarComando = new MySqlCommand(atualizarUsuario, conexao);
+                atualizarComando.Parameters.AddWithValue("@patrocinadorId", patrocinadorId);
+                atualizarComando.Parameters.AddWithValue("@usuarioId", UsuarioLogado.Id);
+
+                atualizarComando.ExecuteNonQuery();
+
+                MessageBox.Show("Patrocinador cadastrado e vinculado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Limpar campos após o cadastro
+                textBox1.Text = "";
+                textBox3.Text = "";
+                pictureBox1.Image = null;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao cadastrar patrocinador: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conexao.Close();
+            }
         }
+
 
         private void patrocinadoresCadastrar_Load(object sender, EventArgs e)
         {
@@ -104,8 +131,6 @@ namespace Battle_Vortex_Form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            homeAdm homeAdm = new homeAdm();
-            homeAdm.Show();
             this.Close();
         }
 
