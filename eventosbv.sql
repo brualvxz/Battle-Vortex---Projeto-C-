@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/11/2024 às 02:48
+-- Tempo de geração: 01/12/2024 às 22:46
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -124,6 +124,14 @@ CREATE TABLE `equipes_jogadores` (
   `equipe_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `equipes_jogadores`
+--
+
+INSERT INTO `equipes_jogadores` (`id`, `jogador_id`, `equipe_id`) VALUES
+(1, 13, 8),
+(6, 12, 8);
+
 -- --------------------------------------------------------
 
 --
@@ -157,13 +165,14 @@ CREATE TABLE `jogadores` (
 --
 
 INSERT INTO `jogadores` (`id`, `nome`, `nickname`, `equipe_id`, `personagemMain_id`, `conquistas`, `foto`) VALUES
-(3, 'Carlos Pereira', 'ArrowMaster', 1, 3, 'Melhor Arqueiro 2023', NULL),
+(3, 'Carlos Pereira', 'ArrowMaster', 1, 3, 'Melhor Arqueiro 2023', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Simon🎀.jpg'),
 (7, 'Vitor', 'vitzx', 1, 2, 'Programador Infernal', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Simon🎀.jpg'),
 (9, 'caiopa', 'caiopa3', NULL, 10, 'dfkljsdfjsdfjkndfg', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Results for quiz whats your secret turn on.jpg'),
 (10, 'gato', 'rolinha', 1, 13, 'sou viadao', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Staring_Cat_meme.png'),
-(12, 'noppa', 'nopinha', 8, 19, 'melhor porcao do jogo', 'G:\\Battle Vortex\\Imagens\\fotobanco\\GbodDITXsAAYzZO.jpeg'),
-(13, 'caiopa04', 'caiopaaa', 8, 14, 'Nao que eu me lembre', 'G:\\Battle Vortex\\Imagens\\fotobanco\\$$.jpg'),
-(14, 'tsuru', 'tsuru come cu', 9, 14, 'asdasdadad', 'G:\\Battle Vortex\\Imagens\\fotobanco\\jinx.jpeg');
+(12, 'noppa', 'nopinha', 8, 19, 'melhor porcao do jogo', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Staring_Cat_meme.png'),
+(13, 'caiopa04', 'caiopas03', 8, 14, 'Nao que eu me lembre', 'D:\\Battle Vortex\\Imagens\\fotobanco\\guts icon.jpg'),
+(14, 'tsuru', 'tsuru come cu', NULL, 14, 'asdasdadad', 'D:\\Battle Vortex\\Imagens\\fotobanco\\Staring_Cat_meme.png'),
+(15, 'bruno', 'brunoxvz', NULL, 26, 'melhor widow br', 'G:\\Battle Vortex\\Imagens\\fotobanco\\e0b5d403-da3f-41a3-9fca-52334f297ff1.jpg');
 
 -- --------------------------------------------------------
 
@@ -175,16 +184,18 @@ CREATE TABLE `patrocinadores` (
   `id` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `conquistas` text NOT NULL,
-  `logo` text DEFAULT NULL
+  `logo` text DEFAULT NULL,
+  `dono_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `patrocinadores`
 --
 
-INSERT INTO `patrocinadores` (`id`, `nome`, `conquistas`, `logo`) VALUES
-(1, 'Empresa A', 'Apoio a eventos esportivos', 'logo_empresa_a.png'),
-(2, 'Empresa B', 'Patrocínio de esportes regionais', 'logo_empresa_b.png');
+INSERT INTO `patrocinadores` (`id`, `nome`, `conquistas`, `logo`, `dono_id`) VALUES
+(1, 'Empresa A', 'Apoio a eventos esportivos', 'logo_empresa_a.png', NULL),
+(2, 'Empresa B', 'Patrocínio de esportes regionais', 'logo_empresa_b.png', NULL),
+(3, 'testete', 'teste', 'G:\\Battle Vortex\\Imagens\\fotobanco\\2352afdf-43e3-47b6-bac5-e574efec4c10.jpg', 2);
 
 -- --------------------------------------------------------
 
@@ -245,19 +256,17 @@ CREATE TABLE `premios` (
   `premio_secundario` varchar(255) DEFAULT NULL,
   `patrocinador_id` int(11) DEFAULT NULL,
   `tipo_origem` enum('Evento','Patrocinador') NOT NULL DEFAULT 'Evento',
-  `premio_terciario` varchar(255) DEFAULT NULL,
-  `logo_premio_principal` text DEFAULT NULL,
-  `logo_premio_secundario` text DEFAULT NULL,
-  `logo_premio_terciario` text DEFAULT NULL
+  `premio_terciario` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `premios`
 --
 
-INSERT INTO `premios` (`id`, `torneio_id`, `descricao`, `premio_principal`, `premio_secundario`, `patrocinador_id`, `tipo_origem`, `premio_terciario`, `logo_premio_principal`, `logo_premio_secundario`, `logo_premio_terciario`) VALUES
-(4, 3, 'dadasd', 'trofeu', 'Sacanagemmmm', 2, 'Patrocinador', 'pinto', 'D:\\Battle Vortex\\Imagens\\fotobanco\\850348.jpg', 'D:\\Battle Vortex\\Imagens\\fotobanco\\829522.jpg', 'D:\\Battle Vortex\\Imagens\\fotobanco\\1281807.png'),
-(5, 2, 'adffafaggsdg', '$90000', '$50000', NULL, 'Evento', '$500', 'D:\\Battle Vortex\\Imagens\\fotobanco\\gang souls.jpg', 'D:\\Battle Vortex\\Imagens\\fotobanco\\98a98ebf-72da-4fc5-b908-f0369227c408.jpg', 'D:\\Battle Vortex\\Imagens\\fotobanco\\j.jpg');
+INSERT INTO `premios` (`id`, `torneio_id`, `descricao`, `premio_principal`, `premio_secundario`, `patrocinador_id`, `tipo_origem`, `premio_terciario`) VALUES
+(4, 3, 'dadasd', 'trofeu', 'Sacanagemmmm', 2, 'Patrocinador', 'pinto'),
+(5, 2, 'adffafaggsdg', '$90000', '$50000', NULL, 'Evento', '$500'),
+(6, 4, 'testestestestes', 'teste', 'alterado', 3, 'Patrocinador', 'teste');
 
 -- --------------------------------------------------------
 
@@ -321,17 +330,19 @@ CREATE TABLE `torneios` (
   `regras` text DEFAULT NULL,
   `vagas` int(11) NOT NULL,
   `status` enum('Em andamento','Concluído') DEFAULT 'Em andamento',
-  `logo` text DEFAULT NULL
+  `logo` text DEFAULT NULL,
+  `organizador_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `torneios`
 --
 
-INSERT INTO `torneios` (`id`, `nome`, `data_inicio`, `data_fim`, `local`, `descricao`, `regras`, `vagas`, `status`, `logo`) VALUES
-(1, 'Torneio A', '2024-12-01 10:00:00', '2024-12-05 18:00:00', 'Estádio A', 'Descrição do Torneio A', 'Regras do Torneio A', 10, 'Concluído', 'D:\\Battle Vortex\\Imagens\\fotobanco\\jinx.jpeg'),
-(2, 'Torneio B', '2024-12-10 10:00:00', '2024-12-12 18:00:00', 'Estádio B', 'Descrição do Torneio B', 'Regras do Torneio B', 8, 'Concluído', NULL),
-(3, 'Torneio C', '2024-12-15 10:00:00', '2024-12-20 18:00:00', 'Estádio C', 'Descrição do Torneio C', 'Regras do Torneio C', 12, 'Concluído', NULL);
+INSERT INTO `torneios` (`id`, `nome`, `data_inicio`, `data_fim`, `local`, `descricao`, `regras`, `vagas`, `status`, `logo`, `organizador_id`) VALUES
+(1, 'Torneio A', '2024-12-01 10:00:00', '2024-12-05 18:00:00', 'Estádio A', 'Descrição do Torneio A', 'Regras do Torneio A', 10, 'Concluído', 'D:\\Battle Vortex\\Imagens\\fotobanco\\jinx.jpeg', NULL),
+(2, 'Torneio B', '2024-12-10 10:00:00', '2024-12-12 18:00:00', 'Estádio B', 'Descrição do Torneio B', 'Regras do Torneio B', 8, 'Concluído', NULL, NULL),
+(3, 'Torneio C', '2024-12-15 10:00:00', '2024-12-20 18:00:00', 'Estádio C', 'Descrição do Torneio C', 'Regras do Torneio C', 12, 'Concluído', NULL, NULL),
+(4, 'teste', '2024-11-18 21:20:10', '2024-12-30 17:20:20', 'teste', 'teste', 'asdafasfasfasf', 5, 'Em andamento', 'D:\\Battle Vortex\\Imagens\\fotobanco\\guts icon.jpg', 3);
 
 --
 -- Acionadores `torneios`
@@ -356,6 +367,27 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
+-- Estrutura stand-in para view `torneios_com_premios`
+-- (Veja abaixo para a visão atual)
+--
+CREATE TABLE `torneios_com_premios` (
+`id` int(11)
+,`Torneio` varchar(100)
+,`Local` varchar(100)
+,`Vagas` int(11)
+,`Regras` text
+,`Status` enum('Em andamento','Concluído')
+,`premio_id` int(11)
+,`1º lugar` varchar(255)
+,`2º lugar` varchar(255)
+,`3º lugar` varchar(255)
+,`Patrocinador` varchar(100)
+,`Data de Término` datetime
+);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `usuarios`
 --
 
@@ -364,22 +396,24 @@ CREATE TABLE `usuarios` (
   `nome` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `senha` varchar(255) NOT NULL,
-  `tipo` enum('Usuário','Administrador','Patrocinador','Capitão') DEFAULT 'Usuário',
+  `tipo` enum('Usuário','Administrador','Patrocinador','Organizador') DEFAULT 'Usuário',
   `status` enum('Ativo','Inativo') DEFAULT 'Ativo',
-  `jogador_id` int(11) DEFAULT NULL
+  `jogador_id` int(11) DEFAULT NULL,
+  `patrocinador_id` int(11) DEFAULT NULL,
+  `organizador_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `tipo`, `status`, `jogador_id`) VALUES
-(1, 'vitor', 'vitorrei1276@gmail.com', '12345', 'Administrador', 'Ativo', NULL),
-(2, 'user1', 'user1@example.com', 'senha123', 'Usuário', 'Ativo', NULL),
-(3, 'user2', 'user2@example.com', 'senha456', 'Usuário', 'Ativo', NULL),
-(4, 'noppa', 'noppa1276@gmail.com', '12345', 'Usuário', 'Ativo', 12),
-(5, 'caio', 'caio@gmail.com', '12345', 'Usuário', 'Ativo', 13),
-(6, 'noppa1', 'user1234@gmail.com', '12345', 'Usuário', 'Ativo', 14);
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `tipo`, `status`, `jogador_id`, `patrocinador_id`, `organizador_id`) VALUES
+(1, 'vitor', 'vitorrei1276@gmail.com', '12345', 'Administrador', 'Ativo', NULL, NULL, NULL),
+(2, 'pat', 'user1@example.com', '12345', 'Patrocinador', 'Ativo', NULL, 3, NULL),
+(3, 'bruno', 'user2@example.com', '12345', 'Organizador', 'Ativo', 15, NULL, 4),
+(4, 'noppa', 'noppa1276@gmail.com', '12345', 'Usuário', 'Ativo', 12, NULL, NULL),
+(5, 'caio', 'caio@gmail.com', '12345', 'Usuário', 'Ativo', 13, NULL, NULL),
+(6, 'noppa1', 'user1234@gmail.com', '12345', 'Usuário', 'Ativo', 14, NULL, NULL);
 
 --
 -- Acionadores `usuarios`
@@ -402,6 +436,37 @@ CREATE TRIGGER `trigger_verifica_nome_usuario` BEFORE INSERT ON `usuarios` FOR E
 END
 $$
 DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura stand-in para view `view_rankings_com_nomes`
+-- (Veja abaixo para a visão atual)
+--
+CREATE TABLE `view_rankings_com_nomes` (
+`id` int(11)
+,`Torneio` varchar(100)
+,`Equipe` varchar(100)
+,`Colocação` int(11)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para view `torneios_com_premios`
+--
+DROP TABLE IF EXISTS `torneios_com_premios`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `torneios_com_premios`  AS SELECT `t`.`id` AS `id`, `t`.`nome` AS `Torneio`, `t`.`local` AS `Local`, `t`.`vagas` AS `Vagas`, `t`.`regras` AS `Regras`, `t`.`status` AS `Status`, `p`.`torneio_id` AS `premio_id`, `p`.`premio_principal` AS `1º lugar`, `p`.`premio_secundario` AS `2º lugar`, `p`.`premio_terciario` AS `3º lugar`, coalesce(`pa`.`nome`,'Sem Patrocinador') AS `Patrocinador`, `t`.`data_fim` AS `Data de Término` FROM ((`torneios` `t` left join `premios` `p` on(`t`.`id` = `p`.`torneio_id`)) left join `patrocinadores` `pa` on(`p`.`patrocinador_id` = `pa`.`id`)) ORDER BY `t`.`id` ASC ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para view `view_rankings_com_nomes`
+--
+DROP TABLE IF EXISTS `view_rankings_com_nomes`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_rankings_com_nomes`  AS SELECT `t`.`id` AS `id`, `t`.`nome` AS `Torneio`, `e`.`nome` AS `Equipe`, `r`.`posicao` AS `Colocação` FROM ((`rankings` `r` join `torneios` `t` on(`r`.`torneio_id` = `t`.`id`)) join `equipes` `e` on(`r`.`equipe_id` = `e`.`id`)) ORDER BY `r`.`torneio_id` ASC ;
 
 --
 -- Índices para tabelas despejadas
@@ -451,7 +516,8 @@ ALTER TABLE `jogadores`
 -- Índices de tabela `patrocinadores`
 --
 ALTER TABLE `patrocinadores`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_dono_id` (`dono_id`);
 
 --
 -- Índices de tabela `personagens`
@@ -479,7 +545,8 @@ ALTER TABLE `rankings`
 -- Índices de tabela `torneios`
 --
 ALTER TABLE `torneios`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_organizador` (`organizador_id`);
 
 --
 -- Índices de tabela `usuarios`
@@ -487,7 +554,9 @@ ALTER TABLE `torneios`
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`),
-  ADD KEY `jogador_id` (`jogador_id`);
+  ADD KEY `jogador_id` (`jogador_id`),
+  ADD KEY `fk_usuarios_patrocinadores` (`patrocinador_id`),
+  ADD KEY `fk_usuariorganizador` (`organizador_id`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
@@ -497,7 +566,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `equipes`
 --
 ALTER TABLE `equipes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de tabela `equipes_inscritas`
@@ -509,7 +578,7 @@ ALTER TABLE `equipes_inscritas`
 -- AUTO_INCREMENT de tabela `equipes_jogadores`
 --
 ALTER TABLE `equipes_jogadores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `eventos_patrocinadores`
@@ -521,13 +590,13 @@ ALTER TABLE `eventos_patrocinadores`
 -- AUTO_INCREMENT de tabela `jogadores`
 --
 ALTER TABLE `jogadores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `patrocinadores`
 --
 ALTER TABLE `patrocinadores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `personagens`
@@ -539,7 +608,7 @@ ALTER TABLE `personagens`
 -- AUTO_INCREMENT de tabela `premios`
 --
 ALTER TABLE `premios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `rankings`
@@ -551,7 +620,7 @@ ALTER TABLE `rankings`
 -- AUTO_INCREMENT de tabela `torneios`
 --
 ALTER TABLE `torneios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
@@ -598,6 +667,12 @@ ALTER TABLE `jogadores`
   ADD CONSTRAINT `jogadores_ibfk_2` FOREIGN KEY (`personagemMain_id`) REFERENCES `personagens` (`id`) ON DELETE SET NULL;
 
 --
+-- Restrições para tabelas `patrocinadores`
+--
+ALTER TABLE `patrocinadores`
+  ADD CONSTRAINT `fk_dono_id` FOREIGN KEY (`dono_id`) REFERENCES `usuarios` (`id`) ON DELETE SET NULL;
+
+--
 -- Restrições para tabelas `premios`
 --
 ALTER TABLE `premios`
@@ -613,9 +688,18 @@ ALTER TABLE `rankings`
   ADD CONSTRAINT `rankings_ibfk_2` FOREIGN KEY (`equipe_id`) REFERENCES `equipes` (`id`) ON DELETE CASCADE;
 
 --
+-- Restrições para tabelas `torneios`
+--
+ALTER TABLE `torneios`
+  ADD CONSTRAINT `fk_organizador` FOREIGN KEY (`organizador_id`) REFERENCES `usuarios` (`id`) ON DELETE SET NULL,
+  ADD CONSTRAINT `torneios_ibfk_1` FOREIGN KEY (`organizador_id`) REFERENCES `usuarios` (`id`) ON DELETE SET NULL;
+
+--
 -- Restrições para tabelas `usuarios`
 --
 ALTER TABLE `usuarios`
+  ADD CONSTRAINT `fk_usuariorganizador` FOREIGN KEY (`organizador_id`) REFERENCES `torneios` (`id`) ON DELETE SET NULL,
+  ADD CONSTRAINT `fk_usuarios_patrocinadores` FOREIGN KEY (`patrocinador_id`) REFERENCES `patrocinadores` (`id`) ON DELETE SET NULL,
   ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`jogador_id`) REFERENCES `jogadores` (`id`);
 
 DELIMITER $$
