@@ -37,6 +37,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // comboBox3
@@ -58,10 +59,10 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(85, 577);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(85, 278);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(995, 19);
+            this.textBox4.Size = new System.Drawing.Size(995, 24);
             this.textBox4.TabIndex = 60;
             // 
             // textBox3
@@ -94,10 +95,11 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Black;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(78, 615);
+            this.button3.Location = new System.Drawing.Point(78, 555);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(496, 23);
+            this.button3.Size = new System.Drawing.Size(496, 81);
             this.button3.TabIndex = 52;
             this.button3.Text = "Voltar para a vizualização";
             this.button3.UseVisualStyleBackColor = false;
@@ -110,26 +112,39 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(267, 21);
             this.comboBox1.TabIndex = 49;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(590, 615);
+            this.button1.Location = new System.Drawing.Point(590, 555);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(490, 23);
+            this.button1.Size = new System.Drawing.Size(490, 81);
             this.button1.TabIndex = 48;
-            this.button1.Text = "Cadastrar";
+            this.button1.Text = "Alterar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(452, 203);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(262, 22);
+            this.textBox5.TabIndex = 63;
+            this.textBox5.Visible = false;
             // 
             // premioAlt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.cadastro_premios;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.cad_e_alt_premios;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox4);
@@ -158,5 +173,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

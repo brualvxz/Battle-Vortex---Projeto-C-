@@ -53,7 +53,7 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(87, 385);
+            this.textBox3.Location = new System.Drawing.Point(87, 308);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(390, 19);
             this.textBox3.TabIndex = 30;
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.cadastro_patrocinador;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.cad_patrocinador;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.button3);

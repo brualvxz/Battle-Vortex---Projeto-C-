@@ -44,7 +44,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(264, 189);
+            this.button4.Location = new System.Drawing.Point(263, 182);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(183, 32);
@@ -57,7 +57,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Black;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(45, 189);
+            this.button3.Location = new System.Drawing.Point(44, 182);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(183, 32);
             this.button3.TabIndex = 28;
@@ -69,7 +69,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 302);
+            this.dataGridView1.Location = new System.Drawing.Point(42, 295);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1079, 285);
             this.dataGridView1.TabIndex = 26;
@@ -79,7 +79,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(264, 144);
+            this.button2.Location = new System.Drawing.Point(263, 137);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 32);
             this.button2.TabIndex = 25;
@@ -91,7 +91,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(264, 98);
+            this.button1.Location = new System.Drawing.Point(263, 91);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(183, 32);
             this.button1.TabIndex = 24;
@@ -103,16 +103,16 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            this.textBox1.Location = new System.Drawing.Point(44, 101);
+            this.textBox1.Location = new System.Drawing.Point(44, 94);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 25);
+            this.textBox1.Size = new System.Drawing.Size(185, 25);
             this.textBox1.TabIndex = 23;
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(44, 143);
+            this.comboBox1.Location = new System.Drawing.Point(43, 136);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(186, 34);
             this.comboBox1.TabIndex = 22;
@@ -120,7 +120,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(921, 88);
+            this.pictureBox1.Location = new System.Drawing.Point(920, 81);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(195, 141);
             this.pictureBox1.TabIndex = 27;
@@ -131,6 +131,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.torneio_user;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

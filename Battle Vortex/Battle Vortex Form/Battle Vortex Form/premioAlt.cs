@@ -15,7 +15,7 @@ namespace Battle_Vortex_Form
 {
     public partial class premioAlt : Form
     {
-      
+
         public premioAlt(string id)
         {
             InitializeComponent();
@@ -36,7 +36,8 @@ namespace Battle_Vortex_Form
                             textBox1.Text = resultado["premio_principal"].ToString();
                             textBox2.Text = resultado["premio_secundario"].ToString();
                             textBox3.Text = resultado["premio_terciario"].ToString();
-                       
+                            textBox5.Text = resultado["id"].ToString();
+
                             // Preencher comboboxes
                             comboBox1.SelectedValue = resultado["torneio_id"];
                             comboBox2.SelectedItem = resultado["tipo_origem"];
@@ -105,7 +106,7 @@ namespace Battle_Vortex_Form
 
             conexao.Close();
         }
-       
+
 
         private void premioAlt_Load(object sender, EventArgs e)
         {
@@ -127,7 +128,7 @@ namespace Battle_Vortex_Form
 
         }
 
-       
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -139,20 +140,26 @@ namespace Battle_Vortex_Form
                     conexao.Open();
 
                     // Atualizar dados do prêmio
-                    MySqlCommand comando = new MySqlCommand(@"UPDATE premios SET descricao = @descricao, premio_principal = @premioPrincipal,
-                        premio_secundario = @premioSecundario, premio_terciario = @premioTerciario, 
-                        tipo_origem = @tipoOrigem, patrocinador_id = @patrocinadorId
-                        WHERE id = @id", conexao);
+                    MySqlCommand comando = new MySqlCommand(@"UPDATE premios 
+                SET descricao = @descricao, 
+                    premio_principal = @premioPrincipal,
+                    premio_secundario = @premioSecundario, 
+                    premio_terciario = @premioTerciario, 
+                    tipo_origem = @tipoOrigem, 
+                    patrocinador_id = @patrocinadorId 
+                WHERE id = @id", conexao);
 
                     // Adicionando parâmetros
                     comando.Parameters.AddWithValue("@descricao", textBox4.Text);
                     comando.Parameters.AddWithValue("@premioPrincipal", textBox1.Text);
                     comando.Parameters.AddWithValue("@premioSecundario", textBox2.Text);
                     comando.Parameters.AddWithValue("@premioTerciario", textBox3.Text);
-               
                     comando.Parameters.AddWithValue("@tipoOrigem", comboBox2.SelectedItem.ToString());
-                    comando.Parameters.AddWithValue("@patrocinadorId", comboBox3.SelectedValue);
-          
+                    comando.Parameters.AddWithValue("@patrocinadorId", (comboBox3.SelectedValue != null) ? comboBox3.SelectedValue : DBNull.Value);
+
+                    // Obtendo o ID do prêmio a partir de textBox5
+                    int premioId = int.Parse(textBox5.Text);
+                    comando.Parameters.AddWithValue("@id", premioId);
 
                     int linhasAfetadas = comando.ExecuteNonQuery();
 
@@ -170,6 +177,17 @@ namespace Battle_Vortex_Form
             {
                 MessageBox.Show($"Erro ao atualizar o prêmio: {ex.Message}");
             }
+        }
+
+
+        private void textBox5_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -471,5 +471,56 @@
   <ItemGroup>
     <None Include="Resources\alt torneio.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt classificação1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt jogador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt patrocinador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cad e alt premios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cad jogador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cad patrocinador %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cad patrocinador %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cad patrocinador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classificação user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipe user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jogador, para usuario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jogadores equipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patrocinadores pat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premio organizador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torneio inscrever.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torneio organizador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torneio user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

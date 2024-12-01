@@ -34,7 +34,7 @@ namespace Battle_Vortex_Form
                 {
                     conexao.Open();
 
-                   
+
                     string queryEquipes = "SELECT id, nome FROM equipes";
                     MySqlCommand comandosEquipes = new MySqlCommand(queryEquipes, conexao);
                     MySqlDataAdapter daEquipes = new MySqlDataAdapter(comandosEquipes);
@@ -46,14 +46,14 @@ namespace Battle_Vortex_Form
                     comboBox1.DisplayMember = "nome";
                     comboBox1.ValueMember = "id";
 
-                    
+
                     string queryTorneios = "SELECT id, nome FROM torneios WHERE status = 'Concluído'";
                     MySqlCommand comandosTorneios = new MySqlCommand(queryTorneios, conexao);
                     MySqlDataAdapter daTorneios = new MySqlDataAdapter(comandosTorneios);
                     DataTable dtTorneios = new DataTable();
                     daTorneios.Fill(dtTorneios);
 
-                    
+
                     comboBox2.DataSource = dtTorneios;
                     comboBox2.DisplayMember = "nome";
                     comboBox2.ValueMember = "id";
@@ -81,57 +81,57 @@ namespace Battle_Vortex_Form
                     {
                         conexao.Open();
 
-                       
+
                         MySqlTransaction transaction = conexao.BeginTransaction();
                         MySqlCommand comando = conexao.CreateCommand();
                         comando.Transaction = transaction;
 
-                       
+
                         foreach (DataGridViewRow row in dataGridView1.Rows)
                         {
-                           
+
                             if (row.IsNewRow) continue;
 
-                            
+
                             string torneio = row.Cells["Torneio"].Value?.ToString();
                             string equipe = row.Cells["Equipe"].Value?.ToString();
                             int posicao = 0;
                             int.TryParse(row.Cells["Posicao"].Value?.ToString(), out posicao);
 
-                            
+
                             if (string.IsNullOrWhiteSpace(torneio) || string.IsNullOrWhiteSpace(equipe) || posicao == 0)
                             {
                                 MessageBox.Show("Por favor, preencha todos os campos corretamente.");
                                 return;
                             }
 
-                           
+
                             comando.CommandText = "SELECT id FROM torneios WHERE nome = @torneio";
                             comando.Parameters.Clear();
                             comando.Parameters.AddWithValue("@torneio", torneio);
                             object idTorneio = comando.ExecuteScalar();
 
-                            
+
                             if (idTorneio == null)
                             {
                                 MessageBox.Show($"Torneio '{torneio}' não encontrado.");
                                 return;
                             }
 
-                           
+
                             comando.CommandText = "SELECT id FROM equipes WHERE nome = @equipe";
                             comando.Parameters.Clear();
                             comando.Parameters.AddWithValue("@equipe", equipe);
                             object idEquipe = comando.ExecuteScalar();
 
-                            
+
                             if (idEquipe == null)
                             {
                                 MessageBox.Show($"Equipe '{equipe}' não encontrada.");
                                 return;
                             }
 
-                            
+
                             comando.CommandText = "INSERT INTO rankings (torneio_id, equipe_id, posicao) " +
                                                   "VALUES (@torneio_id, @equipe_id, @posicao)";
                             comando.Parameters.Clear();
@@ -142,7 +142,7 @@ namespace Battle_Vortex_Form
                             comando.ExecuteNonQuery();
                         }
 
-                        
+
                         transaction.Commit();
                         MessageBox.Show("Classificações inseridas com sucesso!");
                     }
@@ -164,8 +164,6 @@ namespace Battle_Vortex_Form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            classificacaoAdm classificacaoAdm = new classificacaoAdm();
-            classificacaoAdm.Show();
             this.Close();
         }
 

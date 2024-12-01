@@ -49,7 +49,9 @@ namespace Battle_Vortex_Form
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            torneioOrganizador torneioOrganizador = new torneioOrganizador();
+            torneioOrganizador.Show();
+            this.Close();
         }
 
 
@@ -81,6 +83,13 @@ namespace Battle_Vortex_Form
             premioOrganizador.ShowDialog();
 
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            torneioOrganizador torneioOrganizador = new torneioOrganizador();
+            torneioOrganizador.Show();
+            this.Close();
         }
     }
 }

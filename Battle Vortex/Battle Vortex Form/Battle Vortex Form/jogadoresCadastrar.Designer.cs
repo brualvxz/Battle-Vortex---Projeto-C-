@@ -76,7 +76,7 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(85, 383);
+            this.comboBox2.Location = new System.Drawing.Point(85, 306);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(399, 24);
             this.comboBox2.TabIndex = 12;
@@ -98,7 +98,7 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(85, 461);
+            this.textBox3.Location = new System.Drawing.Point(85, 384);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(399, 17);
             this.textBox3.TabIndex = 16;
@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.cadastro_jogador;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.cad_jogador;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.button3);

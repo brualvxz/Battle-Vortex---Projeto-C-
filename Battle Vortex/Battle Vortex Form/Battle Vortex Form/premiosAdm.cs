@@ -37,7 +37,7 @@ namespace Battle_Vortex_Form
                 dataGridView1.Columns.Clear();
                 dataGridView1.DataSource = dt;
 
-               
+
 
                 AdicionarBotoesDataGridView();
                 PreencherComboBoxComColunas(dt);
@@ -71,38 +71,39 @@ namespace Battle_Vortex_Form
             }
         }
 
-       
+
 
         private void PreencherComboBoxComColunas(DataTable dt)
         {
-           
+
             comboBox1.Items.Clear();
 
-           
+
             foreach (DataColumn column in dt.Columns)
             {
-                
+
                 if (!column.ColumnName.Contains("logo"))
                 {
                     comboBox1.Items.Add(column.ColumnName);
                 }
             }
 
-            
+
             if (comboBox1.Items.Count > 0)
             {
                 comboBox1.SelectedIndex = 0;
             }
 
-            comboBox1.SelectedIndex = -1; 
+            comboBox1.SelectedIndex = -1;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             premiosCadastrar premiosCadastrar = new premiosCadastrar();
-            premiosCadastrar.Show();
-            this.Close();
-            
+            premiosCadastrar.ShowDialog();
+
+            CarregarDados();
+
         }
 
         private void premiosAdm_Load(object sender, EventArgs e)
@@ -135,27 +136,27 @@ namespace Battle_Vortex_Form
             {
                 conexao.Open();
 
-                
+
                 DialogResult result = MessageBox.Show("Tem certeza que deseja excluir o prêmio?", "Confirmação", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    
+
                     string excluir = "DELETE FROM premios WHERE id = " + id;
                     MySqlCommand comandos = new MySqlCommand(excluir, conexao);
                     comandos.ExecuteNonQuery();
                     MessageBox.Show("Prêmio excluído com sucesso!");
 
-                    
+
                     CarregarDados();
                 }
             }
         }
 
         private void premioAlt(string id)
-        { 
+        {
             premioAlt alterarForm = new premioAlt(id);
             alterarForm.ShowDialog();
-            
+
             CarregarDados();
         }
 
@@ -228,5 +229,5 @@ namespace Battle_Vortex_Form
             this.Close();
         }
     }
-    
+
 }

@@ -42,10 +42,11 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Black;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(78, 615);
+            this.button3.Location = new System.Drawing.Point(78, 551);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(496, 23);
+            this.button3.Size = new System.Drawing.Size(496, 84);
             this.button3.TabIndex = 31;
             this.button3.Text = "Voltar para a vizualização";
             this.button3.UseVisualStyleBackColor = false;
@@ -62,10 +63,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(590, 615);
+            this.button1.Location = new System.Drawing.Point(590, 551);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(490, 23);
+            this.button1.Size = new System.Drawing.Size(490, 84);
             this.button1.TabIndex = 25;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = false;
@@ -101,10 +103,10 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(85, 577);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(86, 280);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(995, 19);
+            this.textBox4.Size = new System.Drawing.Size(995, 24);
             this.textBox4.TabIndex = 42;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -128,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.cadastro_premios;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.cad_e_alt_premios;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.comboBox3);

@@ -27,7 +27,7 @@ namespace Battle_Vortex_Form
             {
                 conexao.Open();
 
-                
+
                 MySqlCommand consultaColunas = new MySqlCommand("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'eventosbv' AND TABLE_NAME = 'rankings';", conexao);
                 comboBox1.Items.Clear();
 
@@ -35,7 +35,7 @@ namespace Battle_Vortex_Form
                 {
                     if (resultadoColunas.HasRows)
                     {
-                        
+
                         while (resultadoColunas.Read())
                         {
                             string columnName = resultadoColunas["COLUMN_NAME"].ToString();
@@ -48,7 +48,7 @@ namespace Battle_Vortex_Form
                     }
                 }
 
-               
+
                 string query = "SELECT r.id, t.nome AS torneio, e.nome AS equipe, r.posicao FROM rankings r " +
                                "JOIN torneios t ON r.torneio_id = t.id " +
                                "JOIN equipes e ON r.equipe_id = e.id";
@@ -211,8 +211,9 @@ namespace Battle_Vortex_Form
         private void button1_Click(object sender, EventArgs e)
         {
             classificacaoCadastrar rankingCadastrar = new classificacaoCadastrar();
-            rankingCadastrar.Show();
-            this.Close();
+            rankingCadastrar.ShowDialog();
+
+            CarregarDados();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

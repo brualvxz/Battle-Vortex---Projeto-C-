@@ -16,12 +16,12 @@ namespace Battle_Vortex_Form
     public partial class premiosCadastrar : Form
     {
 
-       
+
 
         public premiosCadastrar()
         {
             InitializeComponent();
-           
+
             PreencherComboBoxTorneios();
             PreencherComboBoxTipoOrigem();
             PreencherComboBoxPatrocinadores();
@@ -32,17 +32,17 @@ namespace Battle_Vortex_Form
             MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;");
             conexao.Open();
 
-            
+
             string query1 = "SELECT id, nome FROM torneios";
             MySqlCommand comandos1 = new MySqlCommand(query1, conexao);
             MySqlDataAdapter da1 = new MySqlDataAdapter(comandos1);
             DataTable dt1 = new DataTable();
             da1.Fill(dt1);
 
-            
+
             comboBox1.DataSource = dt1;
-            comboBox1.DisplayMember = "nome"; 
-            comboBox1.ValueMember = "id"; 
+            comboBox1.DisplayMember = "nome";
+            comboBox1.ValueMember = "id";
 
             conexao.Close();
         }
@@ -52,7 +52,7 @@ namespace Battle_Vortex_Form
             comboBox2.Items.Clear();
             comboBox2.Items.Add("Evento");
             comboBox2.Items.Add("Patrocinador");
-            comboBox2.SelectedIndex = 0; 
+            comboBox2.SelectedIndex = 0;
         }
 
         private void PreencherComboBoxPatrocinadores()
@@ -66,16 +66,16 @@ namespace Battle_Vortex_Form
             DataTable dt2 = new DataTable();
             da2.Fill(dt2);
 
-            
+
             DataRow row = dt2.NewRow();
-            row["id"] = DBNull.Value; 
+            row["id"] = DBNull.Value;
             row["nome"] = "Nenhum Patrocinador";
             dt2.Rows.InsertAt(row, 0);
 
-           
+
             comboBox3.DataSource = dt2;
-            comboBox3.DisplayMember = "nome"; 
-            comboBox3.ValueMember = "id"; 
+            comboBox3.DisplayMember = "nome";
+            comboBox3.ValueMember = "id";
 
             conexao.Close();
         }
@@ -91,11 +91,11 @@ namespace Battle_Vortex_Form
 
         }
 
-   
 
-   
 
-    
+
+
+
 
         private void premiosCadastrar_Load(object sender, EventArgs e)
         {
@@ -109,16 +109,13 @@ namespace Battle_Vortex_Form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            premiosAdm premiosAdm = new premiosAdm();
-            premiosAdm.Show();
             this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string descricao = textBox4.Text;
-            string tipo = comboBox2.SelectedItem.ToString(); // Tipo de prêmio (Evento ou Patrocinador)
-       
+            string tipoOrigem = comboBox2.SelectedItem.ToString(); // Tipo de origem: Evento ou Patrocinador
 
             if (comboBox1.SelectedItem == null)
             {
@@ -130,31 +127,27 @@ namespace Battle_Vortex_Form
             string premioPrincipal = textBox1.Text;
             string premioSecundario = textBox2.Text;
             string premioTerciario = textBox3.Text;
+            int patrocinadorId = (int)comboBox3.SelectedValue;
 
             MySqlConnection conexao = new MySqlConnection("SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;");
             conexao.Open();
 
-            string inserir = "INSERT INTO `premios`(`torneio_id`, `descricao`, `premio_principal`, `premio_secundario`, `premio_terciario`, " +
-                            "`logo_premio_principal`, `logo_premio_secundario`, `logo_premio_terciario`, `tipo_origem`, `patrocinador_id`) " +
-                            "VALUES(@torneio_id, @descricao, @premio_principal, @premio_secundario, @premio_terciario,  @tipo_origem, @patrocinador_id)";
-
+            string inserir = "INSERT INTO premios (torneio_id, descricao, premio_principal, premio_secundario, patrocinador_id, tipo_origem, premio_terciario) " +
+                             "VALUES (@torneio_id, @descricao, @premio_principal, @premio_secundario, @patrocinador_id, @tipo_origem, @premio_terciario)";
 
             MySqlCommand comandos = new MySqlCommand(inserir, conexao);
 
             comandos.Parameters.AddWithValue("@torneio_id", torneioId);
             comandos.Parameters.AddWithValue("@descricao", descricao);
-            comandos.Parameters.AddWithValue("@tipo_origem", comboBox2.SelectedItem.ToString()); // Evento ou Patrocinador
-            comandos.Parameters.AddWithValue("@patrocinador_id", comboBox3.SelectedValue);
             comandos.Parameters.AddWithValue("@premio_principal", premioPrincipal);
             comandos.Parameters.AddWithValue("@premio_secundario", premioSecundario);
+            comandos.Parameters.AddWithValue("@patrocinador_id", patrocinadorId);
+            comandos.Parameters.AddWithValue("@tipo_origem", tipoOrigem);
             comandos.Parameters.AddWithValue("@premio_terciario", premioTerciario);
-            
-            
-            comandos.ExecuteNonQuery(); //executa o comando no banco
 
-            conexao.Close(); //fechando a conexão com o banco de dados
+            comandos.ExecuteNonQuery();
 
-            
+            conexao.Close();
 
             // Limpa os campos após o cadastro
             textBox1.Text = "";
@@ -164,9 +157,9 @@ namespace Battle_Vortex_Form
             comboBox1.SelectedIndex = -1;
             comboBox2.SelectedIndex = -1;
             comboBox3.SelectedIndex = 0;
-           
 
             MessageBox.Show("Prêmio cadastrado com sucesso!");
         }
+
     }
 }

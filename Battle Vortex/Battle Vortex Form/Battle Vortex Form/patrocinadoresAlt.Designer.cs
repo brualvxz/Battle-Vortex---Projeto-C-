@@ -47,7 +47,7 @@ namespace Battle_Vortex_Form
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(360, 23);
             this.button3.TabIndex = 37;
-            this.button3.Text = "Voltar para o menu";
+            this.button3.Text = "Voltar para a vizualização";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -55,7 +55,7 @@ namespace Battle_Vortex_Form
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(85, 384);
+            this.textBox3.Location = new System.Drawing.Point(85, 309);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(390, 19);
             this.textBox3.TabIndex = 36;
@@ -92,7 +92,7 @@ namespace Battle_Vortex_Form
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(360, 69);
             this.button1.TabIndex = 33;
-            this.button1.Text = "Cadastrar";
+            this.button1.Text = "Alterar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -118,7 +118,7 @@ namespace Battle_Vortex_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.alt_patrocinador;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.alt_patrocinador1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.textBox2);

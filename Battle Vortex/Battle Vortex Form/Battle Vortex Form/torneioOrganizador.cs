@@ -321,7 +321,9 @@ namespace Battle_Vortex_Form
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
+            premioOrganizador premioOrganizador = new premioOrganizador();
+            premioOrganizador.Show();   
+            this.Close();
         }
     }
 }

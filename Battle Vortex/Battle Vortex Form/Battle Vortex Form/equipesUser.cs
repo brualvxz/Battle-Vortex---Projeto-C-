@@ -597,10 +597,67 @@ namespace Battle_Vortex_Form
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            homeUser homeUser = new homeUser();
-            homeUser.Show();
+            string connectionString = "SERVER=127.0.0.1; DATABASE=eventosbv; UID=root; PASSWORD=;";
 
-            this.Close();
+            using (MySqlConnection conexao = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conexao.Open();
+
+                    // Consulta para obter o tipo de usuário com base no ID logado
+                    string query = "SELECT tipo FROM usuarios WHERE id = @idUsuario AND status = 'Ativo'";
+
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    {
+                        comando.Parameters.AddWithValue("@idUsuario", UsuarioLogado.Id);
+
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string tipo = reader.GetString("tipo");
+
+                                // Redireciona para a tela correspondente ao tipo de usuário
+                                if (tipo.Equals("Administrador", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    homeAdm homeadm = new homeAdm();
+                                    homeadm.Show();
+                                }
+                                else if (tipo.Equals("Usuário", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    homeUser homeuser = new homeUser();
+                                    homeuser.Show();
+                                }
+                                else if (tipo.Equals("Patrocinador", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    homePatrocinador homePat = new homePatrocinador();
+                                    homePat.Show();
+                                }
+                                else if (tipo.Equals("Organizador", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    homeOrganizador homeOrg = new homeOrganizador();
+                                    homeOrg.Show();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Tipo de usuário inválido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+
+                                this.Hide(); // Oculta a tela atual
+                            }
+                            else
+                            {
+                                MessageBox.Show("Usuário não encontrado ou inativo.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao conectar ao banco de dados: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void equipesUser_Load(object sender, EventArgs e)
@@ -659,6 +716,11 @@ namespace Battle_Vortex_Form
         private void button4_Click_1(object sender, EventArgs e)
         {
             LimparFiltro();
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

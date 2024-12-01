@@ -71,6 +71,7 @@
             this.button7.TabIndex = 28;
             this.button7.Text = "Mais Informações...";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -82,6 +83,7 @@
             this.button6.TabIndex = 27;
             this.button6.Text = "Mais Informações...";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 

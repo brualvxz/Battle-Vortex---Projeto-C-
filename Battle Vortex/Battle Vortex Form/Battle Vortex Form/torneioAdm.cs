@@ -190,8 +190,10 @@ namespace Battle_Vortex_Form
         private void button1_Click(object sender, EventArgs e)
         {
             torneiosCadastrar torneiosCadastrar = new torneiosCadastrar();
-            torneiosCadastrar.Show();
-            this.Close();
+            torneiosCadastrar.ShowDialog();
+
+            CarregarDados();
+           
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

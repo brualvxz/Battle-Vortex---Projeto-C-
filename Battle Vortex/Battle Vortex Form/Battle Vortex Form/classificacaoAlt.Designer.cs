@@ -40,16 +40,17 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(202, 238);
+            this.textBox2.Location = new System.Drawing.Point(86, 417);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(394, 22);
             this.textBox2.TabIndex = 74;
+           
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Black;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(214, 372);
+            this.button3.Location = new System.Drawing.Point(106, 557);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(360, 23);
             this.button3.TabIndex = 76;
@@ -62,7 +63,7 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(214, 297);
+            this.button1.Location = new System.Drawing.Point(106, 482);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(360, 69);
             this.button1.TabIndex = 75;
@@ -74,16 +75,16 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(202, 21);
+            this.textBox1.Location = new System.Drawing.Point(132, 119);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(394, 22);
+            this.textBox1.Size = new System.Drawing.Size(297, 22);
             this.textBox1.TabIndex = 77;
             // 
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(202, 184);
+            this.comboBox2.Location = new System.Drawing.Point(86, 342);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(394, 33);
             this.comboBox2.TabIndex = 79;
@@ -92,16 +93,19 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(202, 108);
+            this.comboBox1.Location = new System.Drawing.Point(86, 265);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(394, 33);
             this.comboBox1.TabIndex = 78;
+            
             // 
             // classificacaoAlt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 497);
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.alt_classificação1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);

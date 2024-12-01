@@ -29,5 +29,19 @@ namespace Battle_Vortex_Form
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            torneioUser torneioOrganizador = new torneioUser();
+            torneioOrganizador.Show();
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            torneioUser torneioOrganizador = new torneioUser();
+            torneioOrganizador.Show();
+            this.Close();
+        }
     }
 }

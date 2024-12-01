@@ -43,7 +43,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(335, 572);
+            this.button4.Location = new System.Drawing.Point(328, 526);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(271, 38);
             this.button4.TabIndex = 40;
@@ -55,7 +55,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Black;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(43, 614);
+            this.button3.Location = new System.Drawing.Point(38, 569);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(563, 38);
             this.button3.TabIndex = 39;
@@ -67,17 +67,18 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 71);
+            this.dataGridView1.Location = new System.Drawing.Point(38, 101);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(563, 434);
+            this.dataGridView1.Size = new System.Drawing.Size(561, 372);
             this.dataGridView1.TabIndex = 38;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_2);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(335, 529);
+            this.button2.Location = new System.Drawing.Point(328, 482);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(271, 37);
             this.button2.TabIndex = 37;
@@ -87,17 +88,18 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(43, 529);
+            this.textBox1.Location = new System.Drawing.Point(41, 489);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(275, 31);
+            this.textBox1.Size = new System.Drawing.Size(265, 24);
             this.textBox1.TabIndex = 35;
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(43, 572);
+            this.comboBox1.Location = new System.Drawing.Point(38, 530);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(275, 33);
             this.comboBox1.TabIndex = 34;
@@ -107,9 +109,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(801, 152);
+            this.pictureBox1.Location = new System.Drawing.Point(843, 165);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 272);
+            this.pictureBox1.Size = new System.Drawing.Size(269, 430);
             this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
             // 
@@ -117,6 +119,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.classificação_user;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);

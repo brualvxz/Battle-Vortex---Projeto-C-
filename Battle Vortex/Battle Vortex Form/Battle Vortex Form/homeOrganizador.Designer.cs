@@ -55,7 +55,7 @@
             // 
             this.button8.BackColor = System.Drawing.Color.Black;
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(719, 196);
+            this.button8.Location = new System.Drawing.Point(719, 195);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(192, 23);
             this.button8.TabIndex = 29;
@@ -67,12 +67,13 @@
             // 
             this.button7.BackColor = System.Drawing.Color.Indigo;
             this.button7.ForeColor = System.Drawing.Color.BlueViolet;
-            this.button7.Location = new System.Drawing.Point(943, 522);
+            this.button7.Location = new System.Drawing.Point(944, 522);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(163, 46);
             this.button7.TabIndex = 28;
             this.button7.Text = "Mais Informações...";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -138,7 +139,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(933, 196);
+            this.button2.Location = new System.Drawing.Point(930, 195);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(193, 23);
             this.button2.TabIndex = 34;
@@ -150,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.Home_para_todos1;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.Home_para_todos2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.button2);

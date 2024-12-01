@@ -82,16 +82,16 @@ namespace Battle_Vortex_Form
                 }
 
                 // Verificação e atualização dos botões
-                if (isCapitao)
-                {
-                    label2.Enabled = false;
-                    button1.Enabled = true; // Capitao pode cadastrar a equipe em um torneio
-                }
-                else
-                {
-                    label2.Enabled = true;
-                    button1.Enabled = false; // Membro não pode cadastrar a equipe em um torneio
-                }
+                //  if (isCapitao)
+                //  {
+                //  label2.Enabled = false;
+                //   button1.Enabled = true; // Capitao pode cadastrar a equipe em um torneio
+                //    }
+                //     else
+                //     {
+                //    label2.Enabled = true;
+                //    button1.Enabled = false; // Membro não pode cadastrar a equipe em um torneio
+                //   }
             }
         }
 
@@ -170,6 +170,11 @@ namespace Battle_Vortex_Form
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
     

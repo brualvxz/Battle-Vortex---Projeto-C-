@@ -105,3 +105,99 @@ D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_F
 D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioOrganizador.resources
 D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoAlt.resources
 D:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premioOrganizador.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.AssemblyReference.cache
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.cadastro.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoAdm.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoAlt.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoCadastrar.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoUser.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.equipesAdm.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.equipesAlt.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.equipesCadastrar.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.equipesUser.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeAdm.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeOrganizador.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homePatrocinador.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeUser.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresAdm.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresAlt.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresCadastrar.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresEquipes.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresUser.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Login.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAdm.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAlt.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresCadastrar.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresPat.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresUser.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.perfil.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.perfilAlterar.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premioAlt.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premioOrganizador.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premiosAdm.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premiosCadastrar.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Properties.Resources.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioAdm.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioInscrever.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioOrganizador.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneiosAlt.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneiosCadastrar.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioUser.resources
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.GenerateResource.cache
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.CoreCompileInputs.cache
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.exe
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.pdb
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe.config
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.pdb
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Google.Protobuf.dll
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\MySql.Data.xml
+D:\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle V.6454AFD1.Up2Date
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.AssemblyReference.cache
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.cadastro.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoAdm.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoAlt.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoCadastrar.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoUser.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.equipesAdm.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.equipesAlt.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.equipesCadastrar.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.equipesUser.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeAdm.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeOrganizador.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homePatrocinador.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeUser.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresAdm.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresAlt.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresCadastrar.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresEquipes.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresUser.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Login.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAdm.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresAlt.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresCadastrar.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresPat.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresUser.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.perfil.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.perfilAlterar.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premioAlt.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premioOrganizador.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premiosAdm.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premiosCadastrar.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.Properties.Resources.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioAdm.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioInscrever.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioOrganizador.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneiosAlt.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneiosCadastrar.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioUser.resources
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.GenerateResource.cache
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.csproj.CoreCompileInputs.cache
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.exe
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle Vortex Form.pdb
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe.config
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.exe
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Battle Vortex Form.pdb
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Google.Protobuf.dll
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\MySql.Data.xml
+C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle V.6454AFD1.Up2Date
