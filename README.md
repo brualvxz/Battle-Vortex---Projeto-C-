@@ -73,6 +73,12 @@ Para demonstração do sistema, o jogo **Overwatch** será utilizado como refer�
 - Posso ter acesso total a todas as informações e poder modifica-las 
 - Para controlar a plataforma e promover uma manutenção bem estruturada
 
+7. **Usuario** 
+ 
+- Como usuario
+- Posso salvar as informações associadas a minha conta 
+- Para conseguir controlar as minhas informações e modifica-las
+
 **História de Vizualização**:
 
 1. **Visualização de Torneios**
