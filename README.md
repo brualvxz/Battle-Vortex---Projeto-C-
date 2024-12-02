@@ -95,8 +95,30 @@ Para demonstração do sistema, o jogo **Overwatch** será utilizado como refer�
 
 --------------------------------------------------------
 
-## Protótipo:
+### Alterando Caminhos de Imagens no Banco de Dados com SQL
+**Objetivo:**
+Atualizar os caminhos das imagens nos registros existentes para apontar para a nova localização.
+
+Comando SQL para Atualizar os Caminhos:
+
+```
+-- Atualiza o caminho das imagens para os torneios
+UPDATE torneios 
+SET logo = REPLACE(logo, 'D:\\Battle Vortex\\Imagens\\fotobanco', '(INSERIR AQUI A NOVA RAIZ)\\Battle Vortex\\Imagens\\fotobanco');
+
+-- Atualiza o caminho das imagens para patrocinadores
+UPDATE patrocinadores 
+SET logo = REPLACE(logo, 'D:\\Battle Vortex\\Imagens\\fotobanco', '(INSERIR AQUI A NOVA RAIZ)\\Battle Vortex\\Imagens\\fotobanco');
+
+-- Atualiza o caminho das imagens para jogadores
+UPDATE jogadores 
+SET foto = REPLACE(foto, 'D:\\Battle Vortex\\Imagens\\fotobanco', '(INSERIR AQUI A NOVA RAIZ)\\Battle Vortex\\Imagens\\fotobanco');
+
+-- Atualiza o caminho das imagens para equipes
+UPDATE equipes 
+SET logo = REPLACE(logo, 'D:\\Battle Vortex\\Imagens\\fotobanco', '(INSERIR AQUI A NOVA RAIZ)\\Battle Vortex\\Imagens\\fotobanco');
 
 
+```
 
 
