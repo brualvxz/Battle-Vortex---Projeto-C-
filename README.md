@@ -190,7 +190,7 @@ E-mail
 Senha
 Confirmar Senha
 ```
-**2. Navegando pelo Sistema**
+## 2. Navegando pelo Sistema
 
 Após o login, você verá a tela inicial do programa. Aqui estão os principais módulos disponíveis no sistema.
 ```
@@ -204,7 +204,7 @@ Usuários.
 ```
 Cada módulo possui um conjunto de funcionalidades que facilitam o gerenciamento dos dados.
 
-**3. Gerenciando Torneios**
+## 3. Gerenciando Torneios
    
 **3.1 Criar um Novo Torneio**
 
@@ -234,7 +234,7 @@ Selecione o torneio desejado.
 Clique em **Alterar** para modificar os detalhes.
 Após realizar as alterações, clique em Alterar para atualizar as informações.
 
-**4. Gerenciando Equipes**
+## 4. Gerenciando Equipes
 
 **4.1 Adicionar uma Nova Equipe**
 
@@ -253,7 +253,7 @@ Clique em Cadastrar para registrar a equipe.
 No menu Equipes, você verá uma lista de todas as equipes cadastradas.
 Para ver os detalhes de uma equipe, clique no nome dela. Você poderá ver os jogadores e os torneios nos quais a equipe está inscrita.
 
-**5. Gerenciando Jogadores**
+## 5. Gerenciando Jogadores
    
 **5.1 Adicionar Jogador**
 
@@ -275,7 +275,7 @@ Clique em Cadastrar para adicionar o jogador.
 No menu Jogadores, clique no jogador que deseja editar.
 Altere as informações necessárias e clique em Alterar.
 
-**6. Gerenciando Patrocinadores**
+## 6. Gerenciando Patrocinadores
 
 **6.1 Adicionar Patrocinador**
 
@@ -290,7 +290,7 @@ Evento para Patrocinar: Selecione o evento que deseja patrocinar.
 ```
 Clique em Cadastrar para registrar o patrocinador.
 
-**7. Gerenciando Prêmios**
+## 7. Gerenciando Prêmios
 
 **7.1 Adicionar Prêmio**
 
