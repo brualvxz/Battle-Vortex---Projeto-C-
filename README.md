@@ -175,19 +175,21 @@ string pastaDestino = @"(INSIRA AQUI O NOVO CAMINHO)Battle Vortex\Imagens\fotoba
 **1.1 Login**
 
 Ao abrir o programa, você será solicitado a fazer login. Use suas credenciais (usuário e senha) para acessar o sistema
+```
 Nome de Usuário ou E-mail
 Senha 
+```
 Se você ainda não tiver uma conta, entre em contato com o administrador para criar um login.
 
 **1.2 Cadastro**
 
 Caso não tenha um login você irá selecionar **"Cadastre-se"** para fazer o seu cadastro. Usando as credencias abaixo para acessar a área de login. 
-
-Nome de Usuário.
-E-mail.
-Senha.
-Confirmar Senha.
-
+```
+Nome de Usuário
+E-mail
+Senha
+Confirmar Senha
+```
 **2. Navegando pelo Sistema**
 
 Após o login, você verá a tela inicial do programa. Aqui estão os principais módulos disponíveis no sistema.
@@ -209,7 +211,7 @@ Cada módulo possui um conjunto de funcionalidades que facilitam o gerenciamento
 Clique no menu **Participe dos Torneios.**
 Clique no botão **Cadastrar novo Torneio.**
 Preencha os campos obrigatórios:
-
+```
 Nome: Nome do torneio.
 Data de Início: Data e hora em que o torneio começa.
 Data de Fim: Data e hora de término do torneio.
@@ -217,7 +219,7 @@ Local: Local onde o torneio será realizado.
 Descrição: Descrição do torneio.
 Regras: Regras principais do torneio.
 Vagas: Número de equipes que podem participar.
-
+```
 Clique em Cadastrar para criar o torneio.
 
 **3.2 Visualizar Torneios**
@@ -238,10 +240,12 @@ Após realizar as alterações, clique em Alterar para atualizar as informaçõe
 
 No menu Equipes, clique em **Cadastrar uma nova Equipe.**
 Preencha os campos obrigatórios:
+```
 Nome da Equipe: Nome da equipe.
 Logo da Equipe: Selecione a imagem da logo da equipe.
 E-mail de Contato: Coloque um E-mail para contato caso seja necessário.
 Localidade: Cidade ou país de origem da equipe.
+```
 Clique em Cadastrar para registrar a equipe.
 
 **4.2 Visualizar Equipes**
@@ -255,12 +259,14 @@ Para ver os detalhes de uma equipe, clique no nome dela. Você poderá ver os jo
 Acesse o menu **Visualizar Jogadores.**
 Clique em **Cadastre-se como Jogador.**
 Preencha os campos obrigatórios:
+```
 Nome do Jogador: Nome completo.
 Nickname: Nome ou apelido no jogo.
 Equipe: Selecione a equipe à qual o jogador pertence.
 Personagem Main: Escolha o personagem principal do jogador.
 Conquistas: Liste as conquistas importantes do jogador.
 Foto: Foto do jogador.
+```
 Clique em Cadastrar para adicionar o jogador.
 
 **5.2 Editar Jogador**
@@ -275,10 +281,12 @@ Altere as informações necessárias e clique em Alterar.
 Acesse o menu **Consulte os Patrocinadores.**
 Clique em **Cadastrar sua Marca.**
 Preencha os campos obrigatórios:
+```
 Nome do Patrocinador: Nome da empresa ou patrocinador.
 Logo: Selecione o logo do patrocinador.
 Sobre a Empresa: Contar um pouco sobre a empresa que vai patrocinar.
 Evento para Patrocinar: Selecione o evento que deseja patrocinar.
+```
 Clique em Cadastrar para registrar o patrocinador.
 
 **7. Gerenciando Prêmios**
@@ -288,11 +296,13 @@ Clique em Cadastrar para registrar o patrocinador.
 Acesse o menu **Veja os Prêmios.**
 Clique em **Cadastrar novo Prêmio.**
 Preencha os seguintes campos:
+```
 Torneio: Selecione o torneio ao qual o prêmio está vinculado.
 Origem do Prêmio: De onde o prêmio vem.
 Descrição do Prêmio: Descrição do prêmio oferecido.
 Tipo de Prêmio: Selecione se é prêmio principal, secundário ou terciário.
 Foto do Prêmio: Selecione a imagem representativa do prêmio.
+```
 Clique em Cadastrar para adicionar o prêmio.
 
 **8. Finalizando a Sessão**
