@@ -99,13 +99,21 @@ Para demonstração do sistema, o jogo **Overwatch** será utilizado como refer�
 ### Importe o Banco de Dados
 
 **1.** Clone o repositório do projeto no seu ambiente local.
+
 **2.** Certifique-se de que o MySQL está instalado e rodando no seu sistema.
-**3.** Importe o Banco de Dados:
+
+**3.** Importe o Banco de Dados.
+
 **4.** No diretório do projeto, na pasta "Banco de dados" você encontrará um arquivo SQL (eventosbv.sql).
+
 **5.** Acesse seu gerenciador de banco de dados (MySQL Workbench, phpMyAdmin, etc.).
+
 **6.** Crie um banco de dados com o nome eventosbv.
+
 **7.** Importe o arquivo SQL para popular o banco de dados com as tabelas e dados necessários.
+
 **8.** Abra o projeto no Visual Studio e compile-o para gerar o executável.
+
 **9.** Execute o sistema e aproveite suas funcionalidades.
 
 ### Alterando Caminhos de Imagens no Banco de Dados com SQL
