@@ -191,7 +191,7 @@ Confirmar Senha.
 **2. Navegando pelo Sistema**
 
 Após o login, você verá a tela inicial do programa. Aqui estão os principais módulos disponíveis no sistema.
-
+```
 Torneios.
 Equipes.
 Jogadores.
@@ -199,7 +199,7 @@ Patrocinadores.
 Prêmios.
 Ranking.
 Usuários.
-
+```
 Cada módulo possui um conjunto de funcionalidades que facilitam o gerenciamento dos dados.
 
 **3. Gerenciando Torneios**
@@ -209,6 +209,7 @@ Cada módulo possui um conjunto de funcionalidades que facilitam o gerenciamento
 Clique no menu **Participe dos Torneios.**
 Clique no botão **Cadastrar novo Torneio.**
 Preencha os campos obrigatórios:
+
 Nome: Nome do torneio.
 Data de Início: Data e hora em que o torneio começa.
 Data de Fim: Data e hora de término do torneio.
@@ -216,6 +217,7 @@ Local: Local onde o torneio será realizado.
 Descrição: Descrição do torneio.
 Regras: Regras principais do torneio.
 Vagas: Número de equipes que podem participar.
+
 Clique em Cadastrar para criar o torneio.
 
 **3.2 Visualizar Torneios**
