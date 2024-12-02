@@ -181,24 +181,24 @@ Se você ainda não tiver uma conta, entre em contato com o administrador para c
 
 **1.2 Cadastro**
 
-Caso não tenha um login você irá selecionar **"Cadastre-se"** para fazer o seu cadastro. Usando as credencias abaixo para acessar a área de login 
+Caso não tenha um login você irá selecionar **"Cadastre-se"** para fazer o seu cadastro. Usando as credencias abaixo para acessar a área de login. 
 
--Nome de Usuário
--E-mail
--Senha
--Confirmar Senha
+Nome de Usuário.
+E-mail.
+Senha.
+Confirmar Senha.
 
 **2. Navegando pelo Sistema**
 
-Após o login, você verá a tela inicial do programa. Aqui estão os principais módulos disponíveis no sistema:
+Após o login, você verá a tela inicial do programa. Aqui estão os principais módulos disponíveis no sistema.
 
--Torneios
--Equipes
--Jogadores
--Patrocinadores
--Prêmios
--Ranking
--Usuários
+Torneios.
+Equipes.
+Jogadores.
+Patrocinadores.
+Prêmios.
+Ranking.
+Usuários.
 
 Cada módulo possui um conjunto de funcionalidades que facilitam o gerenciamento dos dados.
 
