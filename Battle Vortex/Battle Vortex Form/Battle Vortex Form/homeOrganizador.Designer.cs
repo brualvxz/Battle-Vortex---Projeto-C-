@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.Home_para_todos2;
+            this.BackgroundImage = global::Battle_Vortex_Form.Properties.Resources.Home_Correta;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1164, 675);
             this.Controls.Add(this.button2);

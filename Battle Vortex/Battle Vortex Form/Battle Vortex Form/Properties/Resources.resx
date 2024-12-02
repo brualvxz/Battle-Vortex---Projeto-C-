@@ -118,130 +118,133 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="alt patrocinador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alt patrocinador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="equipe user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipe user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cadastro classificação" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastro classificação1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alt equipe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alt equipe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Torneio para quem pode cadastrar (organizador e adm)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Torneio para quem pode cadastrar (organizador e adm).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alt torneio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alt torneio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="classificação" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classificação.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadastro patrocinador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastro patrocinador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Home para todos2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home para todos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadastro torneio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastro torneio2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Home para todos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home para todos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Premios para usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Premios para usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Premios para adm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Premios para adm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadastro equipe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastro equipe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadastro premios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastro premios1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Equipe cadastro, para usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Equipe cadastro, para usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alt jogador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alt jogador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alt classificação" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alt classificação.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="torneio user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\torneio user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cadastro Patrocinador usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cadastro Patrocinador usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cadastro Patrocinador, para o patrocinador e adm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cadastro Patrocinador, para o patrocinador e adm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Torneio para quem pode cadastrar (organizador e adm)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Torneio para quem pode cadastrar (organizador e adm).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jogador, para usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jogador, para usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadastro jogador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastro jogador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastro1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Torneio para quem joga, usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Torneio para quem joga, usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Home para todos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home para todos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alt classificação1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alt classificação1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alt jogador1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alt jogador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alt patrocinador1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alt patrocinador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cad e alt premios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cad e alt premios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cadastro equipe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro equipe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cad jogador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cad jogador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="torneio inscrever" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\torneio inscrever.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cad patrocinador (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cad patrocinador (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cad e alt premios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cad e alt premios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alt classificação" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alt classificação.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadastro patrocinador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro patrocinador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Premios para usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Premios para usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadastro torneio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro torneio2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cad patrocinador (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cad patrocinador (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cad patrocinador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cad patrocinador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Torneio para quem joga, usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Torneio para quem joga, usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classificação user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classificação user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="alt jogador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alt jogador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="equipe user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equipe user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jogador, para usuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jogador, para usuario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Home para todos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home para todos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jogadores equipe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jogadores equipe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="alt patrocinador1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alt patrocinador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="patrocinadores pat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\patrocinadores pat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="alt classificação1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alt classificação1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="premio organizador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\premio organizador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="torneio inscrever" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\torneio inscrever.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="alt patrocinador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alt patrocinador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torneio organizador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torneio organizador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="torneio user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\torneio user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="classificação" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classificação.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jogador, para usuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jogador, para usuario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadastro jogador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro jogador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cad patrocinador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cad patrocinador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patrocinadores pat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\patrocinadores pat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home para todos2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home para todos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipe cadastro, para usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Equipe cadastro, para usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alt jogador1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alt jogador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="classificação user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classificação user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadastro classificação" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro classificação1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home para todos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home para todos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadastro premios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro premios1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alt torneio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alt torneio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jogadores equipe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jogadores equipe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cadastro Patrocinador, para o patrocinador e adm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cadastro Patrocinador, para o patrocinador e adm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Premios para adm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Premios para adm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alt equipe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alt equipe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jogador, para usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jogador, para usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home Correta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home Correta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

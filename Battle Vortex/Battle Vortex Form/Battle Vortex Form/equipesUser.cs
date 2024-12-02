@@ -261,6 +261,14 @@ namespace Battle_Vortex_Form
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
+            if (e.RowIndex >= 0)
+            {
+                // Obtém o ID da equipe clicada
+                int idEquipe = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id"].Value);
+                CarregarLogoEquipe(idEquipe);
+            }
+
             if (e.RowIndex >= 0) // Garante que estamos clicando em uma linha válida
             {
                 // Obtém o ID da equipe clicada
@@ -294,16 +302,24 @@ namespace Battle_Vortex_Form
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (e.RowIndex >= 0)
             {
-                // Verifica se a célula clicada é a do botão "Excluir"
+                // Obtém o ID da equipe clicada
+                int idEquipe = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id"].Value);
+                CarregarLogoEquipe(idEquipe);
+            }
+
+            if (e.RowIndex >= 0)
+            {
+               
                 if (e.ColumnIndex == dataGridView1.Columns["Excluir"].Index)
                 {
                     // Obtém o ID do jogador que foi clicado na linha
                     int idJogador = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id"].Value);
                     string nomeJogador = dataGridView1.Rows[e.RowIndex].Cells["nome"].Value.ToString();
 
-                    // Verifica se o jogador logado é o capitão ou um membro da equipe
+                   
                     if (isCapitao)
                     {
                         // Se for o capitão, pode remover o jogador

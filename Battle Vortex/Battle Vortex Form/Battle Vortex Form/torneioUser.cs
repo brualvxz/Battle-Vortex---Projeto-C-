@@ -263,11 +263,6 @@ namespace Battle_Vortex_Form
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void torneioUser_Load(object sender, EventArgs e)
         {
 

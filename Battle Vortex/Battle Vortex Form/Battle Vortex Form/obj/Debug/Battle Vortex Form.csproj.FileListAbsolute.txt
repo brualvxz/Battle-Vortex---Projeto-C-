@@ -201,3 +201,16 @@ C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Batt
 C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\Google.Protobuf.dll
 C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\bin\Debug\MySql.Data.xml
 C:\Users\Noppa\OneDrive\Desktop\novo brunop\Battle-Vortex---Projeto-C--main\Battle-Vortex---Projeto-C--main\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle V.6454AFD1.Up2Date
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoAlt.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.classificacaoUser.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homeOrganizador.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.homePatrocinador.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.jogadoresEquipes.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresPat.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.patrocinadoresUser.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.perfil.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.perfilAlterar.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.premioOrganizador.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioInscrever.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioOrganizador.resources
+F:\Battle Vortex\Battle Vortex Form\Battle Vortex Form\obj\Debug\Battle_Vortex_Form.torneioUser.resources

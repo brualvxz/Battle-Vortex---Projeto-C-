@@ -107,7 +107,7 @@ namespace Battle_Vortex_Form
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string caminhoDaImagem = openFileDialog.FileName;
-                string pastaDestino = @"D:\Battle Vortex\Imagens\fotobanco";
+                string pastaDestino = @"F:\Battle Vortex\Imagens\fotobanco";
                 nomeArquivo = Path.GetFileName(caminhoDaImagem);
                 caminhoNoServidor = Path.Combine(pastaDestino, nomeArquivo);
 
