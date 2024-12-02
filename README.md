@@ -20,7 +20,7 @@ Para demonstração do sistema, o jogo **Overwatch** será utilizado como refer�
 4. **Gerenciamento de Jogos**: Organização dos jogos dentro do torneio, adaptável para qualquer tipo de jogo.
 5. **Gerenciamento de Prêmios**: Cadastro e acompanhamento dos prêmios oferecidos em cada torneio.
 6. **Classificação de Jogadores e Equipes**: Geração de tabelas de classificação com base nos resultados dos torneios.
-7. **Calendário de Eventos**: Exibição de datas, horários e fases dos campeonatos.
+7. **Cadastro de Usuarios**: Armazenamento de informações associadas ao usuario e separação de funções.
 8. **Cadastro de Patrocinadores**: Cadastro de patrocinadores, incluindo informações planejadas dos eventos patrocinados.
 
 ------------------------------------------------------
