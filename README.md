@@ -116,6 +116,8 @@ Para demonstração do sistema, o jogo **Overwatch** será utilizado como refer�
 
 **9.** Execute o sistema e aproveite suas funcionalidades.
 
+-------------------------------------------------------- 
+
 ### Alterando Caminhos de Imagens no Banco de Dados com SQL
 **Objetivo:**
 > Observação, remova o () também ao inserir a nova raiz
@@ -140,9 +142,9 @@ SET foto = REPLACE(foto, 'D:\\Battle Vortex\\Imagens\\fotobanco', '(INSERIR AQUI
 -- Atualiza o caminho das imagens para equipes
 UPDATE equipes 
 SET logo = REPLACE(logo, 'D:\\Battle Vortex\\Imagens\\fotobanco', '(INSERIR AQUI A NOVA RAIZ)\\Battle Vortex\\Imagens\\fotobanco');
-
-
 ```
+
+--------------------------------------------------------
 
 ### Alteração no Código do Projeto no Visual Studio 2022
 **Passos:**
@@ -175,11 +177,17 @@ string pastaDestino = @"(INSIRA AQUI O NOVO CAMINHO)Battle Vortex\Imagens\fotoba
 **1.1 Login**
 
 Ao abrir o programa, você será solicitado a fazer login. Use suas credenciais (usuário e senha) para acessar o sistema
+> Certos logins só podem ser obtidos através do banco de dados, onde o administrador do sistema deve atribuir a eles o tipo do usuario.
+
 ```
 Nome de Usuário ou E-mail
 Senha 
 ```
-Se você ainda não tiver uma conta, entre em contato com o administrador para criar um login.
+Existem 4 tipos de usuarios diferentes, onde cada um possue uma particularidade no projeto.
+**Administrador**: Acesso total ao sistema e a manipulação das informações no sistema, **obtido apenas através do banco de dados**.
+**Usuario**: Acesso a vizualização das informações e funcionalidades seguindo as histórias de usuario.
+**Organizador**: Possuem o mesmo nivel de acesso que usuario, porém ele pode cadastrar os torneios e os premios **(Obtido através de um administrador,  deve-se pedir a ele que crie o login)**;
+**Patrocinador**: Mesmo acesso que usuario, contudo ele é o unico usuario que pode cadastrar as marcas patrocinadoras **(Obtido através de um administrador, deve-se pedir a ele que crie o login)**;
 
 **1.2 Cadastro**
 
