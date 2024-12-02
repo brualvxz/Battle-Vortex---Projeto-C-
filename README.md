@@ -94,6 +94,19 @@ Para demonstração do sistema, o jogo **Overwatch** será utilizado como refer�
 - Para acompanhar o desempenho e as conquistas dos meus favoritos.
 
 --------------------------------------------------------
+##Tutorial de Uso do Programa de Gerenciamento de Torneios Battle Vortex
+
+###Importe o Banco de Dados
+
+**1.**Clone o repositório do projeto no seu ambiente local.
+**2.**Certifique-se de que o MySQL está instalado e rodando no seu sistema.
+**3.**Importe o Banco de Dados:
+**4.**No diretório do projeto, na pasta "Banco de dados" você encontrará um arquivo SQL (eventosbv.sql).
+**5.**Acesse seu gerenciador de banco de dados (MySQL Workbench, phpMyAdmin, etc.).
+**6.**Crie um banco de dados com o nome eventosbv.
+**7.**Importe o arquivo SQL para popular o banco de dados com as tabelas e dados necessários.
+**8.**Abra o projeto no Visual Studio e compile-o para gerar o executável.
+**9.**Execute o sistema e aproveite suas funcionalidades.
 
 ### Alterando Caminhos de Imagens no Banco de Dados com SQL
 **Objetivo:**
@@ -149,3 +162,126 @@ string pastaDestino = @"(INSIRA AQUI O NOVO CAMINHO)Battle Vortex\Imagens\fotoba
 
 
 ```
+###Acessando o Programa
+ 
+**1.1 Login**
+
+Ao abrir o programa, você será solicitado a fazer login. Use suas credenciais (usuário e senha) para acessar o sistema
+Nome de Usuário ou E-mail
+Senha 
+Se você ainda não tiver uma conta, entre em contato com o administrador para criar um login.
+
+**1.2 Cadastro**
+
+Caso não tenha um login você irá selecionar **"Cadastre-se"** para fazer o seu cadastro. Usando as credencias abaixo para acessar a área de login 
+Nome de Usuário
+E-mail
+Senha
+Confirmar Senha
+
+**2. Navegando pelo Sistema**
+
+Após o login, você verá a tela inicial do programa. Aqui estão os principais módulos disponíveis no sistema:
+Torneios
+Equipes
+Jogadores
+Patrocinadores
+Prêmios
+Ranking
+Usuários
+Cada módulo possui um conjunto de funcionalidades que facilitam o gerenciamento dos dados.
+
+**3. Gerenciando Torneios**
+   
+**3.1 Criar um Novo Torneio**
+
+Clique no menu **Participe dos Torneios.**
+Clique no botão **Cadastrar novo Torneio.**
+Preencha os campos obrigatórios:
+Nome: Nome do torneio.
+Data de Início: Data e hora em que o torneio começa.
+Data de Fim: Data e hora de término do torneio.
+Local: Local onde o torneio será realizado.
+Descrição: Descrição do torneio.
+Regras: Regras principais do torneio.
+Vagas: Número de equipes que podem participar.
+Clique em Cadastrar para criar o torneio.
+
+**3.2 Visualizar Torneios**
+
+Acesse o menu Torneios.
+Você verá uma lista de todos os torneios cadastrados.
+Para visualizar detalhes de um torneio, clique sobre o nome do torneio.
+
+**3.3 Editar Torneio**
+
+Selecione o torneio desejado.
+Clique em **Alterar** para modificar os detalhes.
+Após realizar as alterações, clique em Alterar para atualizar as informações.
+
+**4. Gerenciando Equipes**
+
+**4.1 Adicionar uma Nova Equipe**
+
+No menu Equipes, clique em **Cadastrar uma nova Equipe.**
+Preencha os campos obrigatórios:
+Nome da Equipe: Nome da equipe.
+Logo da Equipe: Selecione a imagem da logo da equipe.
+E-mail de Contato: Coloque um E-mail para contato caso seja necessário.
+Localidade: Cidade ou país de origem da equipe.
+Clique em Cadastrar para registrar a equipe.
+
+**4.2 Visualizar Equipes**
+No menu Equipes, você verá uma lista de todas as equipes cadastradas.
+Para ver os detalhes de uma equipe, clique no nome dela. Você poderá ver os jogadores e os torneios nos quais a equipe está inscrita.
+
+**5. Gerenciando Jogadores**
+   
+**5.1 Adicionar Jogador**
+
+Acesse o menu **Visualizar Jogadores.**
+Clique em **Cadastre-se como Jogador.**
+Preencha os campos obrigatórios:
+Nome do Jogador: Nome completo.
+Nickname: Nome ou apelido no jogo.
+Equipe: Selecione a equipe à qual o jogador pertence.
+Personagem Main: Escolha o personagem principal do jogador.
+Conquistas: Liste as conquistas importantes do jogador.
+Foto: Foto do jogador.
+Clique em Cadastrar para adicionar o jogador.
+
+**5.2 Editar Jogador**
+
+No menu Jogadores, clique no jogador que deseja editar.
+Altere as informações necessárias e clique em Alterar.
+
+**6. Gerenciando Patrocinadores**
+
+**6.1 Adicionar Patrocinador**
+
+Acesse o menu **Consulte os Patrocinadores.**
+Clique em **Cadastrar sua Marca.**
+Preencha os campos obrigatórios:
+Nome do Patrocinador: Nome da empresa ou patrocinador.
+Logo: Selecione o logo do patrocinador.
+Sobre a Empresa: Contar um pouco sobre a empresa que vai patrocinar.
+Evento para Patrocinar: Selecione o evento que deseja patrocinar.
+Clique em Cadastrar para registrar o patrocinador.
+
+**7. Gerenciando Prêmios**
+
+**7.1 Adicionar Prêmio**
+
+Acesse o menu **Veja os Prêmios.**
+Clique em **Cadastrar novo Prêmio.**
+Preencha os seguintes campos:
+Torneio: Selecione o torneio ao qual o prêmio está vinculado.
+Origem do Prêmio: De onde o prêmio vem.
+Descrição do Prêmio: Descrição do prêmio oferecido.
+Tipo de Prêmio: Selecione se é prêmio principal, secundário ou terciário.
+Foto do Prêmio: Selecione a imagem representativa do prêmio.
+Clique em Cadastrar para adicionar o prêmio.
+
+**8. Finalizando a Sessão**
+    
+Quando terminar de usar o programa, clique em Logout no canto superior direito para encerrar sua sessão.
