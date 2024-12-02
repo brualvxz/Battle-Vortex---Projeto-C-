@@ -1,6 +1,6 @@
 # Battle Vortex
 
-#### Integrantes: Vitor Reis e Bruno Vilela
+#### Criadores: Vitor Reis e Bruno Vilela
 ------------------------------------------------------
 ### Descrição do Projeto:
 
@@ -323,3 +323,5 @@ Clique em Cadastrar para adicionar o prêmio.
 ### 8. Finalizando a Sessão
     
 Quando terminar de usar o programa, clique em Logout no canto superior direito para encerrar sua sessão.
+
+-----------------------------------
