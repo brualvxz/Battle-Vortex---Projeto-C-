@@ -249,6 +249,7 @@ Localidade: Cidade ou país de origem da equipe.
 Clique em Cadastrar para registrar a equipe.
 
 **4.2 Visualizar Equipes**
+
 No menu Equipes, você verá uma lista de todas as equipes cadastradas.
 Para ver os detalhes de uma equipe, clique no nome dela. Você poderá ver os jogadores e os torneios nos quais a equipe está inscrita.
 
