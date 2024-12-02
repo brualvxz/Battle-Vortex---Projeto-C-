@@ -97,6 +97,7 @@ Para demonstração do sistema, o jogo **Overwatch** será utilizado como refer�
 
 ### Alterando Caminhos de Imagens no Banco de Dados com SQL
 **Objetivo:**
+> Observação, remova o () também ao inserir a nova raiz
 Atualizar os caminhos das imagens nos registros existentes para apontar para a nova localização.
 
 Comando SQL para Atualizar os Caminhos:
@@ -121,4 +122,28 @@ SET logo = REPLACE(logo, 'D:\\Battle Vortex\\Imagens\\fotobanco', '(INSERIR AQUI
 
 ```
 
+### Alteração no Código do Projeto no Visual Studio 2022
+**Passos:**
 
+> Observação, remova o () também ao inserir a nova raiz
++ Abrir o projeto no Visual Studio 2022:
+
+- Abra o Visual Studio 2022.
+Vá em Arquivo > Abrir > Projeto/Solução e selecione o projeto "Battle Vortex".
+
+* Localizar o caminho das imagens no código:
+
+Utilize a função Localizar e Substituir pressionando <sub>Ctrl + Shift + F</sub>.
+Pesquise pela linha de código
+
+```
+string pastaDestino = @"D:\Battle Vortex\Imagens\fotobanco";
+
+```
+#### Substitua pela nova raiz, onde as fotos ficarão salvas.
+
+```
+string pastaDestino = @"(INSIRA AQUI O NOVO CAMINHO)Battle Vortex\Imagens\fotobanco";
+
+
+```
