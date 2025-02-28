@@ -1,4 +1,4 @@
-# Battle Vortex
+# Projeto de Sistema de Campeonatos E-Sports
 
 #### Criadores: Vitor Reis e Bruno Vilela
 ------------------------------------------------------
